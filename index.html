@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>イズミ装美｜工事書類作成</title>
+<style>
+:root{--ink:#192c3e;--muted:#536777;--line:#cbd4db;--paper:#fff;--canvas:#f2f4f5;--accent:#164c6a;--soft:#e7eff3;--warn:#815012;--danger:#a12f2a;--focus:#126c99;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:var(--ink);background:var(--canvas);font-size:15px;line-height:1.65}
+*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit;color:inherit}button,a,input,select,textarea{touch-action:manipulation}button{cursor:pointer;min-height:44px;padding:8px 17px;border:1px solid var(--line);background:white;border-radius:7px;font-weight:600}button:hover{background:var(--soft)}button:disabled{opacity:.55;cursor:default}button.primary{background:var(--accent);border-color:var(--accent);color:white}button.primary:hover{background:#103b54}a{color:var(--accent);text-underline-offset:3px}input,select,textarea{width:100%;border:1px solid #aab9c4;border-radius:5px;padding:10px 11px;background:white;min-height:44px;caret-color:var(--accent)}textarea{resize:vertical;min-height:86px}input[type=checkbox]{width:20px;min-height:20px;height:20px;accent-color:var(--accent);flex-shrink:0}input[type=file]{padding:6px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}::selection{background:#badcea;color:#102d42}
+header{background:var(--ink);color:white;padding:20px max(20px,calc((100vw - 1260px)/2));display:flex;justify-content:space-between;align-items:center;gap:18px}header strong{display:block;font-size:21px;letter-spacing:.03em}header p{font-size:13px;margin:3px 0;color:#d3dfe6}header .local{font-size:12px;border:1px solid #6f8596;padding:5px 10px;border-radius:4px;white-space:nowrap}.notice{padding:10px 20px;border-bottom:1px solid var(--line);background:#fff9eb;color:#67491e;font-size:13px;text-align:center}
+.shell{max-width:1300px;margin:0 auto;padding:26px 20px 50px}.topbar{display:flex;gap:16px;align-items:end;justify-content:space-between;padding-bottom:22px}.site-picker{max-width:600px;flex:1}.site-picker>label{font-size:13px;font-weight:600;display:block;margin-bottom:6px}.inline{display:flex;gap:9px;align-items:center}.inline select{flex:1;min-width:0}.actions{display:flex;gap:8px;flex-wrap:wrap}.tabs{display:flex;border-bottom:2px solid var(--line);gap:7px;margin-bottom:28px}.tabs button{border:0;border-bottom:3px solid transparent;border-radius:0;background:transparent;padding:11px 19px;margin-bottom:-2px;white-space:nowrap}.tabs button[aria-selected=true]{border-bottom-color:var(--accent);color:var(--accent);background:white}.page-head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:19px}h1{font-size:25px;line-height:1.4;margin:0 0 7px}h2{font-size:18px;margin:0 0 13px}h3{font-size:16px;margin:22px 0 10px}p{margin:6px 0 16px}.subtle{color:var(--muted);font-size:13px}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:30px}.rail{border-right:1px solid var(--line);padding-right:22px}.rail button{display:block;width:100%;text-align:left;margin-bottom:8px;overflow-wrap:anywhere}.rail button[aria-current=true]{background:var(--soft);border-color:var(--accent);color:var(--accent)}.rail .subtle{margin-top:18px}.panel{background:var(--paper);padding:24px;border:1px solid var(--line);border-radius:9px;min-width:0}.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 20px}.field{display:block;font-size:13px;min-width:0}.field>span{display:block;font-weight:600;margin-bottom:5px}.field.full{grid-column:1/-1}.field small{color:var(--muted);display:block;font-size:12px;margin-top:3px}.required{color:var(--danger);font-size:11px;font-style:normal;margin-left:4px}.group{border:0;padding:0;margin:0 0 27px;min-width:0}.group legend{font-size:17px;font-weight:700;margin:0 0 14px;padding:0}.group+.group{border-top:1px solid var(--line);padding-top:22px}details{border-top:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:600;min-height:42px;padding:6px 0}.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.check{display:flex;gap:10px;align-items:center;padding:9px 0;overflow-wrap:anywhere}.check small{display:block;color:var(--muted)}.record{border:1px solid var(--line);padding:14px;margin:12px 0;border-radius:6px}.record h3{margin:0 0 10px}.status{font-size:13px;color:var(--muted);min-height:23px}#saveStatus.error{color:var(--danger);font-weight:bold}.alert{background:#fff5e2;color:#624414;padding:13px 16px;border:1px solid #ddc69a;border-radius:6px;margin:12px 0 20px}.doclist{border-top:1px solid var(--line)}.docrow{display:grid;grid-template-columns:minmax(0,1fr) 90px 88px;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:12px 0}.docrow .check{padding:0}.docrow .orientation{color:var(--muted);font-size:12px;text-align:center}.docrow button{font-size:12px;padding:7px}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:18px 0}.paper-scroll{overflow:auto;background:#dce2e6;padding:20px;border-radius:6px;max-height:700px}.paper-caption{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:10px 0;min-width:260px}.paper-caption strong{font-size:13px}.paper-caption button{font-size:13px}.paper-scroll .clean-sheet{cursor:text}.preview-note{font-size:13px;color:var(--muted);margin:10px 0}.empty{padding:26px 0;color:var(--muted)}footer{border-top:1px solid var(--line);padding:16px 0;margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:15px}.hidden,[hidden]{display:none!important}dialog{border:0;border-radius:10px;padding:20px;width:min(950px,94vw);max-height:94vh;color:var(--ink)}dialog::backdrop{background:#152b3ecc}.dialogbar{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:15px}#referenceImage{max-width:100%;display:block;margin:auto}#toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:white;border-radius:7px;padding:11px 19px;max-width:90vw;z-index:20;box-shadow:0 5px 20px #0003}.table-wrap{overflow:auto}table{border-collapse:collapse}#inventory table{width:100%;font-size:12px}#inventory th,#inventory td{padding:8px;border:1px solid var(--line);text-align:left}
+/* 指定様式を参照し、白地の文字・罫線・図として印刷用に描画する。 */
+.cloud-loading .shell{visibility:hidden}.cloud-loading .notice::after{content:" 登録内容を読み込んでいます…"}.sheet{background:white;color:#111;width:190mm;height:277mm;padding:0;margin:0 auto 20px;position:relative;flex-shrink:0}.sheet.landscape{width:277mm;height:190mm}.sheet:last-child{margin-bottom:0}.clean-sheet>svg{display:block;width:100%;height:100%}
+@page{size:A4 portrait;margin:10mm}@page portrait{size:A4 portrait;margin:10mm}@page landscape{size:A4 landscape;margin:10mm}
+@media(max-width:760px){header{padding:16px;align-items:start}header strong{font-size:17px}header .local{font-size:11px}.notice{text-align:left;padding:10px 16px}.shell{padding:18px 14px 35px}.topbar{display:block}.topbar .actions{margin-top:13px}.tabs{gap:0;overflow:auto;margin-bottom:23px}.tabs button{padding:10px 13px;font-size:13px}.page-head{align-items:start;display:block}.page-head .actions{margin-top:10px}h1{font-size:22px}.layout{grid-template-columns:1fr;gap:15px}.rail{border-right:0;padding:0;display:flex;gap:8px;overflow:auto}.rail button{min-width:150px;width:auto;margin:0}.rail .subtle{display:none}.panel{padding:18px 15px}.field-grid,.checks{grid-template-columns:1fr}.field.full{grid-column:auto}.docrow{grid-template-columns:minmax(0,1fr) 65px;gap:7px}.docrow .orientation{grid-column:1;text-align:left;padding-left:30px}.docrow button{grid-column:2;grid-row:auto}.docrow .check{font-size:13px}.paper-scroll{padding:12px}.actions button{font-size:13px}footer{display:block}footer .actions{margin-top:10px}input,select,textarea{font-size:16px}}
+@media print{html,body{background:white!important;margin:0!important;padding:0!important}body>*{display:none!important}#printRoot{display:block!important}.sheet{page:portrait;margin:0;break-after:page;break-inside:avoid;height:276.5mm}.sheet.landscape{page:landscape;height:189.5mm}.sheet:last-child{break-after:auto}.sheet th{-webkit-print-color-adjust:exact;print-color-adjust:exact}.sheet .poster{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body data-public-app="true">
+<header><div><strong>イズミ装美　工事書類作成</strong><p>会社と作業員を登録して、現場ごとの書類をまとめる</p></div><span class="local">一般用</span></header>
+<div class="notice">どなたでも使えます。入力内容はこの端末のブラウザに保存され、ほかの利用者や管理者には送信されません。</div>
+<div class="shell">
+ <div class="topbar"><div class="site-picker"><label for="sitePicker">作成する現場</label><div class="inline"><select id="sitePicker"></select><button id="newSite">現場を追加</button></div></div><div class="actions"><button class="primary" data-action="saveRecords">登録・保存</button><button id="demo">記入例で試す</button><button id="backup">バックアップ保存</button></div></div>
+ <nav class="tabs" role="tablist" aria-label="作成の手順"><button role="tab" id="tab-site" data-tab="site" aria-selected="true">現場・参加者</button><button role="tab" id="tab-company" data-tab="company" aria-selected="false">会社登録</button><button role="tab" id="tab-worker" data-tab="worker" aria-selected="false">作業員登録</button><button role="tab" id="tab-docs" data-tab="docs" aria-selected="false">書類・印刷</button></nav>
+ <main id="main" role="tabpanel" aria-labelledby="tab-site"></main>
+ <footer><button class="primary" data-action="saveRecords">登録・保存</button><div id="saveStatus" class="status" role="status">読み込み中</div><div class="actions"><button id="helpButton">使い方・確認事項</button><button id="restoreButton">バックアップ読込</button><input id="restoreFile" type="file" accept=".json,application/json" hidden></div></footer>
+</div>
+<dialog id="referenceDialog"><div class="dialogbar"><strong id="referenceTitle"></strong><button data-close="referenceDialog">閉じる</button></div><img id="referenceImage" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="添付された原本写真"></dialog>
+<dialog id="helpDialog"><div class="dialogbar"><h2>使い方・確認事項</h2><button data-close="helpDialog">閉じる</button></div><div id="helpContent"></div></dialog>
+<div id="printRoot" hidden></div><div id="toast" role="status" hidden></div>
+<script>'use strict';
+const PHOTOS={};
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=()=>globalThis.crypto?.randomUUID?.()||('id-'+Date.now()+'-'+Math.random().toString(36).slice(2));
+const today=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
+const f=(key,label,type='text',options=null,required=false)=>({key,label,type,options,required});
+const statusOptions=['加入','未加入','適用除外'];
+const COMPANY=[
+ ['基本情報',[f('kind','事業者の区分','select',['会社','一人親方']),f('name','協力会社名／屋号','text',null,true),f('kana','フリガナ','text',null,true),f('zip','郵便番号'),f('address','所在地','textarea',null,true),f('tel','電話番号','tel',null,true),f('fax','FAX番号','tel'),f('email','E-mail','email'),f('representative','代表者','text',null,true),f('repBirth','代表者生年月日','date'),f('startDate','取引開始日','date'),f('capital','資本金（万円）'),f('staffCount','従業員数'),f('closingDay','賃金締切日','text',null,true)]],
+ ['施工体制情報',[f('upperCompany','直上の協力会社名','text',null,true),f('primaryCompany','受注元の協力会社名（一次協力会社）','text',null,true),f('sekisuiOffice','積水ハウスグループ担当事業所名','text',null,true)]],
+ ['建設業許可情報',[f('permitStatus','建設業許可の有無','select',['建設業許可あり','建設業許可なし']),...Array.from({length:2},(_,i)=>[f(`permit${i}Authority`,`許可${i+1}：国土交通大臣／都道府県知事`),f(`permit${i}Type`,`許可${i+1}：一般／特定`,'select',['一般','特定']),f(`permit${i}YearCode`,`許可${i+1}：許可年度（般・特の後）`),f(`permit${i}Number`,`許可${i+1}：番号`),f(`permit${i}Date`,`許可${i+1}：許可年月日`,'date'),f(`permit${i}Expiry`,`許可${i+1}：有効期限`,'date'),f(`permit${i}Trade`,`許可${i+1}：許可業種`)]).flat()]],
+ ['保険加入情報',[f('healthStatus','健康保険：加入状況','select',statusOptions),f('healthOffice','健康保険：事業所整理記号'),f('healthType','健康保険の種類'),f('healthUnion','健保組合・国保組合の名称'),f('pensionStatus','厚生年金：加入状況','select',statusOptions),f('pensionOffice','厚生年金：事業所整理記号'),f('employmentStatus','雇用保険：加入状況','select',statusOptions),f('employmentOffice','雇用保険：事業所整理番号')]]
+];
+const WORKER=[
+ ['本人情報',[f('consent','原本に記載された本人同意','select',['得ている','得ていない']),f('kana','フリガナ','text',null,true),f('name','氏名（外国籍の方はアルファベット）','text',null,true),f('birth','生年月日','date',null,true),f('gender','性別','select',['男','女','選択しない']),f('blood','血液型','text',null,true),f('zip','郵便番号'),f('address','現住所','textarea',null,true),f('mobile','携帯番号','tel'),f('email','E-mail','email'),f('emergencyName','緊急連絡先：氏名'),f('emergencyRelation','緊急連絡先：続柄'),f('emergencyTel','緊急連絡先：TEL','tel')]],
+ ['施工体制情報',[f('companyCode','協力会社コード'),f('teamCode','班コード'),f('teamName','班名'),f('upperCompany','直上の協力会社名'),f('primaryCompany','受注元の協力会社名（一次協力会社）'),f('sekisuiOffice','積水ハウスグループ担当事業所名')]],
+ ['従事者施工情報',[f('sekisuiStart','積水グループ現場作業開始日','date'),f('hired','雇入年月日（移籍日・再入社日）','date'),f('jobMain','職種区分：主','select',['施工技能者・現場作業員','工事責任者','その他']),f('jobSub','職種区分：従','select',['施工技能者・現場作業員','工事責任者','その他']),f('otherJob','役員・事務員など（その他の内容）'),f('workerType','従事者区分','select',['労働者','事業主','一人親方']),f('tradeName','屋号（一人親方）'),f('foreman','職長区分','select',['該当','非該当']),f('workStyle','従事形態','select',['専属的従事（予定）','単発的従事（スポット）']),f('constructionMain','工事種別：主','select',['積水ハウス：新築','積水ハウス：SP','積水ハウス：RF','積水ハウス：SHM PM','積水ハウス建設：新築','積水ハウス建設：RF','ノイエ：新築','SI事業：新築']),f('constructionMainCode','主工程区分の番号（原本下部の表を参照）'),f('constructionSub','工事種別：従','select',['積水ハウス：新築','積水ハウス：SP','積水ハウス：RF','積水ハウス：SHM PM','積水ハウス建設：新築','積水ハウス建設：RF','ノイエ：新築','SI事業：新築']),f('constructionSubCode','従工程区分の番号（原本下部の表を参照）'),f('constructionType','旧試作の工程メモ（印刷には主・従欄へ移してください）','textarea')]],
+ ['在留資格情報（外国籍の方のみ）',[f('nationality','国籍'),f('residenceStatus','在留資格'),f('residenceExpiry','在留期間満了日','date'),f('residenceCard','在留カード番号')]],
+ ['社会保険情報等',[f('healthStatus','健康保険等','select',statusOptions),f('pensionStatus','年金保険','select',statusOptions),f('pensionRecipient','年金受給者','select',['受給']),f('employmentStatus','雇用保険','select',statusOptions),f('employmentUnknown','被保険者番号不詳','select',['番号不詳']),f('dayLabor','日雇保険','select',['加入']),f('retirementBuild','国の退職金制度：建退共','select',['加入','非加入']),f('retirementSmall','国の退職金制度：中退共','select',['加入','非加入'])]],
+ ['労災保険情報（一人親方・事業主）',[f('specialInsurance','特別加入','select',['加入あり','加入なし']),f('specialUnion','加入組合'),f('specialNumber','保険番号'),f('specialYear','有効年度')]],
+ ['賃金支払及び計算方法等',[f('closingDay','賃金締切日'),f('payType','賃金の支払形態','select',['日給','月給','その他','日雇']),f('payOther','その他の支払形態'),f('payMonth','賃金支払月','select',['当月','翌月','翌々月']),f('payDay','賃金支払日'),f('workHours','所定労働時間（勤務時間）'),f('breakMinutes','休憩（分）'),f('variableHours','仕事の都合によって変動','select',['変動あり']),f('allowance','残業手当の支給','select',['必ず支給する','時々支給する','支給しない']),f('earlyStart','計算開始時間（早出）：何時何分まで'),f('overtimeStart','計算開始時間（残業）：何時何分から'),f('roundUnit','時間外手当の計算単位（分）'),f('roundMethod','端数処理','select',['切り上げ','切り捨て']),f('holidays','休日（土曜日・日曜日・祝祭日・その他）')]]
+];
+const SITE=[
+ ['現場の基本情報',[f('name','現場名'),f('code','管理番号'),f('city','市・区（緊急連絡先の見出し）'),f('address','現場住所','textarea'),f('start','工事開始日','date'),f('end','工事終了日','date'),f('work','作業内容','textarea')]],
+ ['元請けとイズミ装美の担当',[f('owner','元請け会社名（指定様式固定）'),f('ownerAddress','元請け会社の所在地（指定様式固定）'),f('ownerTel','元請け会社の代表電話（指定様式固定）','tel'),f('ownerPerson','元請け担当者'),f('ownerOfficeTel','元請け担当：事務所TEL','tel'),f('ownerMobile','元請け担当：携帯TEL','tel'),f('contractorPerson','イズミ装美の担当者'),f('contractorOfficeTel','イズミ装美：事務所TEL（空欄は会社登録の電話）','tel'),f('contractorMobile','イズミ装美：携帯TEL','tel')]],
+ ['現場ごとの緊急連絡先',[...['電気','水道','ガス','電話','労基署','警察','消防'].flatMap((n,i)=>[f('contact'+i+'Name',n+'：連絡先名称'),f('contact'+i+'Tel',n+'：電話番号','tel')])]],
+ ['救急指定病院',[...Array.from({length:2},(_,i)=>[f('hospital'+i+'Name',`病院${i+1}：名称`),f('hospital'+i+'Tel',`病院${i+1}：電話番号`,'tel'),f('hospital'+i+'Address',`病院${i+1}：住所`),f('hospital'+i+'Route',`病院${i+1}：搬送経路・案内`,'textarea')]).flat()]]
+];
+SITE.push(['労働災害発生時緊急連絡先（一般用）',[
+f('accidentManagerName','全体責任者の氏名'),f('accidentManagerTel','全体責任者の電話','tel'),
+...[0,1,2].flatMap(i=>[f('accidentGroupName'+i,'グループ'+(i+1)+'の名称'),f('accidentGroup'+i,'グループ'+(i+1)+'の連絡先（1行目は責任者、2行目以降は担当者。氏名 / 電話番号）','textarea')])
+]]);
+const EDUCATION=[f('name','教育・研修等記録'),f('date','受講年月日','date'),f('number','番号')];
+const QUALIFICATION=[f('name','取得資格・免許名称'),f('date','取得年月日','date'),f('number','番号')];
+const HEALTH=[f('date','受診年月日','date'),f('type','定期／特殊','select',['定期','特殊','定期・特殊']),f('kind','特殊健診の種類'),f('place','受診会場')];
+const DOCS=[
+ {id:'worker1',name:'施工従事者情報 入力原票 NO.1（基本情報）',photo:2,orientation:'縦',kind:'worker'},
+ {id:'worker2',name:'施工従事者情報 入力原票 NO.2（各種追加情報）',photo:1,orientation:'縦',kind:'worker'},
+ {id:'company',name:'協力会社情報 入力原票',photo:3,orientation:'縦',kind:'company'},
+ {id:'sign',name:'作業中・ご迷惑をお掛けしております',photo:4,orientation:'縦'},
+ {id:'heat',name:'熱中症のおそれのある者に対する処置フロー',photo:5,orientation:'縦',source:true},
+ {id:'ky',name:'危険予知活動表（KY）',photo:6,orientation:'横'},
+ {id:'accident',name:'労働災害発生時緊急連絡先',photo:7,orientation:'横',source:true},
+ {id:'emergency',name:'緊急連絡先・救急指定病院',photo:8,orientation:'縦'}
+];
+const IZUMI_DEFAULTS=Object.freeze({"id":"izumi","kind":"会社","name":"株式会社イズミ装美","kana":"イズミソウビ","zip":"103-0007","address":"東京都中央区日本橋浜町2-16-5 東味ビルディング5階","tel":"03-5623-5477","fax":"03-5623-5478","representative":"大島 邦夫","capital":"1200","permitStatus":"建設業許可あり","permit0Authority":"東京都知事","permit0Type":"一般","permit0YearCode":"7","permit0Number":"152758","permit0Date":"2025-11-20","permit0Trade":"内装仕上工事業"});
+function fillIzumiDefaults(data){
+ const company=data.companies.find(c=>c.id==='izumi');if(!company||!['','株式会社イズミ装美'].includes(String(company.name||'').replace(/\s/g,'')))return;
+ const empty=value=>value===undefined||value===null||String(value).trim()==='';
+ const groups=[['zip','address','tel','fax'],Object.keys(IZUMI_DEFAULTS).filter(key=>key.startsWith('permit'))];
+ const blocked=new Set(groups.filter(keys=>keys.some(key=>!empty(company[key])&&company[key]!==IZUMI_DEFAULTS[key])).flat());
+ for(const [key,value]of Object.entries(IZUMI_DEFAULTS))if(!blocked.has(key)&&empty(company[key]))company[key]=value;
+}
+const KEY='izumi-construction-docs-public-v1';
+const CLOUD=Boolean(window.IZUMI_CLOUD);
+function blankWorker(companyId='izumi'){return {id:uid(),companyId,education:[{name:'雇入時教育'},{name:'職長教育'},{}],qualifications:Array.from({length:12},()=>({})),health:[{},{}]}}
+function blankSite(){return {id:uid(),name:'',owner:'積水ハウスシャーメゾンPM東京株式会社',ownerAddress:'渋谷区代々木2-1-1 新宿マインズタワー3階',ownerTel:'03-5350-3517',companyIds:['izumi'],workerIds:[],kyDays:{}}}
+function initial(){return {schemaVersion:1,companies:[{...IZUMI_DEFAULTS}],workers:[],sites:[blankSite()]}}
+let state=initial(),tab='site',companyId='izumi',workerId='',siteId=state.sites[0].id,kyDate=today(),selectedDocs=new Set(DOCS.map(d=>d.id)),previewIds=[],loadError=false;
+try{const saved=CLOUD?null:localStorage.getItem(KEY);if(saved){state=validate(JSON.parse(saved));siteId=state.sites[0]?.id||'';companyId=state.companies[0].id;workerId=state.workers[0]?.id||''}}catch(e){loadError=true;$('#saveStatus').textContent='保存データを読めませんでした。元データは上書きせず、バックアップ読込で復元してください。';$('#saveStatus').classList.add('error')}
+if(!loadError)fillIzumiDefaults(state);
+const currentSite=()=>state.sites.find(s=>s.id===siteId),currentCompany=()=>state.companies.find(c=>c.id===companyId),currentWorker=()=>state.workers.find(w=>w.id===workerId),companyName=id=>state.companies.find(c=>c.id===id)?.name||'名称未入力';
+try{const ui=CLOUD?null:JSON.parse(localStorage.getItem(KEY+'-view')||'null');if(ui){if(state.sites.some(x=>x.id===ui.siteId))siteId=ui.siteId;if(state.companies.some(x=>x.id===ui.companyId))companyId=ui.companyId;if(state.workers.some(x=>x.id===ui.workerId))workerId=ui.workerId;if(['site','company','worker','docs'].includes(ui.tab))tab=ui.tab}}catch(e){}
+function save(){if(CLOUD){cloudDraft();return;}if(loadError)return;try{localStorage.setItem(KEY,JSON.stringify(state));$('#saveStatus').classList.remove('error');$('#saveStatus').textContent='このブラウザに保存済み　'+new Date().toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'});}catch(e){$('#saveStatus').textContent='端末への保存に失敗しました。バックアップ保存で入力内容を残してください。';$('#saveStatus').classList.add('error')}}
+let toastTimer;function toast(msg){$('#toast').textContent=msg;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,5000)}
+function fieldHtml(field,obj,target,prefix=''){const {key,label,type,options,required}=field;const v=obj?.[key]??'';const id=prefix+target+'-'+key;let control;if(type==='select')control=`<select id="${esc(id)}" data-target="${esc(target)}" data-key="${esc(key)}"><option value="">未入力</option>${options.map(o=>`<option ${v===o?'selected':''}>${esc(o)}</option>`).join('')}</select>`;else if(type==='textarea')control=`<textarea id="${esc(id)}" data-target="${esc(target)}" data-key="${esc(key)}" maxlength="500">${esc(v)}</textarea>`;else control=`<input id="${esc(id)}" type="${type}" data-target="${esc(target)}" data-key="${esc(key)}" value="${esc(v)}" maxlength="120" ${type==='tel'?'inputmode="tel"':type==='number'?'min="0" max="999" step="1"':''}>`;if(target==='site'&&['owner','ownerAddress','ownerTel'].includes(key))control=control.replace('<input ','<input readonly ').replace('<textarea ','<textarea readonly ');return `<label class="field ${type==='textarea'?'full':''}" for="${esc(id)}"><span>${esc(label)}${required?'<i class="required">原本＊</i>':''}</span>${control}</label>`}
+function groupsHtml(groups,obj,target,expanded=1,prefix=''){return groups.map(([title,fields],i)=>{const content=`<div class="field-grid">${fields.map(f=>fieldHtml(f,obj,target,prefix)).join('')}</div>`;return i<expanded?`<fieldset class="group"><legend>${title}</legend>${content}</fieldset>`:`<details><summary>${title}</summary>${content}</details>`}).join('')}
+function options(items,selected,label='name'){return items.map(x=>`<option value="${esc(x.id)}" ${x.id===selected?'selected':''}>${esc(x[label]||'名称未入力')}</option>`).join('')}
+function render(){if(!CLOUD&&!loadError){try{localStorage.setItem(KEY+'-view',JSON.stringify({siteId,companyId,workerId,tab}))}catch(e){}}const s=currentSite();$('#sitePicker').innerHTML=options(state.sites,siteId);$$('[data-tab]').forEach(b=>b.setAttribute('aria-selected',String(tab===b.dataset.tab)));$('#main').setAttribute('aria-labelledby','tab-'+tab);$('#main').innerHTML=tab==='site'?renderSite(s):tab==='company'?renderCompany():tab==='worker'?renderWorker():renderDocs(s);if(previewIds.length&&tab==='docs')refreshPreview();applyCloudPermissions();}
+function renderSite(s){if(!s)return '<h1>現場を追加してください</h1>';return `<div class="page-head"><div><h1>現場・参加者</h1><p class="subtle">共通情報はここで一度入力。KYと緊急連絡先へ反映します。</p></div><button data-action="duplicateSite">この現場を複製</button></div><div class="panel">${groupsHtml(SITE,s,'site',1)}<h2 style="margin-top:25px">参加する会社・一人親方</h2><div class="checks">${state.companies.map(c=>`<label class="check"><input type="checkbox" data-assign="company" value="${esc(c.id)}" ${s.companyIds.includes(c.id)?'checked':''}><span>${esc(c.name||'名称未入力')}<small>${esc(c.kind||'区分未入力')}</small></span></label>`).join('')}</div><h2 style="margin-top:25px">参加する作業員</h2><p class="subtle">参加会社に所属する作業員を選べます。選んだ人数をKYへ反映します。</p><div class="checks">${state.workers.filter(w=>s.companyIds.includes(w.companyId)).map(w=>`<label class="check"><input type="checkbox" data-assign="worker" value="${esc(w.id)}" ${s.workerIds.includes(w.id)?'checked':''}><span>${esc(w.name||'氏名未入力')}<small>${esc(companyName(w.companyId))}</small></span></label>`).join('')||'<p class="subtle">会社登録・作業員登録の順に追加してください。</p>'}</div><div class="toolbar"><button class="primary" data-goto="docs">書類の作成へ</button></div></div>`}
+function renderCompany(){const c=currentCompany();return `<div class="page-head"><div><h1>会社・一人親方の登録</h1><p class="subtle">一度登録すれば、複数の現場で選んで使えます。原本＊は原本の重要項目です。</p></div><button data-action="newCompany">会社・一人親方を追加</button></div><div class="layout"><aside class="rail" aria-label="登録会社">${state.companies.map(x=>`<button data-company="${esc(x.id)}" aria-current="${x.id===companyId}">${esc(x.name||'名称未入力')}</button>`).join('')}<p class="subtle">入力後は「登録・保存」を押してください。</p></aside><div class="panel">${c?`${c.id==='izumi'?'<p class="subtle">基本情報・建設業許可は確認資料から初期登録しています。保険番号や賃金締切日など、未確認の項目は空欄です。</p>':''}${groupsHtml(COMPANY,c,'company',1)}`:'<p>登録する会社を選んでください。</p>'}</div></div>`}
+function repeatEditor(title,rows,fields,target){return `<details><summary>${title}（${rows.length}行）</summary>${rows.map((r,i)=>`<div class="record"><h3>${i+1}行目</h3><div class="field-grid">${fields.map(f=>fieldHtml(f,r,`${target}.${i}`)).join('')}</div></div>`).join('')}</details>`}
+function effectiveWorker(){const w=currentWorker();if(!w)return null;const c=state.companies.find(c=>c.id===w.companyId)||{};return {...w,upperCompany:w.upperCompany||c.upperCompany||'',primaryCompany:w.primaryCompany||c.primaryCompany||'',sekisuiOffice:w.sekisuiOffice||c.sekisuiOffice||'',closingDay:w.closingDay||c.closingDay||''}}
+function renderWorker(){const w=effectiveWorker();return `<div class="page-head"><div><h1>作業員の登録</h1><p class="subtle">施工体制と賃金締切日は所属会社から反映。個別入力がある場合は個別の値を使います。</p></div><button data-action="newWorker">作業員を追加</button></div><div class="layout"><aside class="rail" aria-label="登録作業員">${state.workers.map(x=>`<button data-worker="${esc(x.id)}" aria-current="${x.id===workerId}">${esc(x.name||'氏名未入力')}<small style="display:block">${esc(companyName(x.companyId))}</small></button>`).join('')||'<p class="subtle">作業員を追加してください。</p>'}</aside><div class="panel">${w?`<label class="field" style="margin-bottom:24px"><span>所属協力会社</span><select id="workerCompany">${options(state.companies,w.companyId)}</select></label>${groupsHtml(WORKER,w,'worker',1)}${repeatEditor('受講記録（安全衛生教育）',w.education,EDUCATION,'education')}${repeatEditor('資格・免許',w.qualifications,QUALIFICATION,'qualifications')}${repeatEditor('健康診断受診記録',w.health,HEALTH,'health')}<div class="alert">顔写真・資格証等の添付ファイル管理は未実装です。マイナンバーが記載された書類は添付しないでください（原本の注意書き）。</div>`:'<p class="empty">「作業員を追加」から登録を始められます。</p>'}</div></div>`}
+function kyRecords(s,create=false){if(!s)return {};const cid=companyId||'izumi';if(create){s.kyByCompany??={};if(cid==='izumi'){s.kyByCompany.izumi??=s.kyDays||{};s.kyDays=s.kyByCompany.izumi;return s.kyDays;}return s.kyByCompany[cid]??={};}return s.kyByCompany?.[cid]||(cid==='izumi'||!CLOUD?s.kyDays:{});}
+function dayRecord(){return kyRecords(currentSite())[kyDate]||{}}
+function ensureDayRecord(){const current=dayRecord(),records=kyRecords(currentSite(),true);return records[kyDate]??={...current,confirmed:false};}
+function renderDocs(s){const k=dayRecord();return `<div class="page-head"><div><h1>書類・印刷</h1><p class="subtle">${esc(s?.name||'現場名未入力')}　／　KY・労災連絡先はA4横、その他はA4縦</p></div><div class="actions"><button data-goto="site">現場の情報を編集</button><button class="primary" data-action="print">選択した書類を印刷</button></div></div><div class="layout"><aside class="rail"><div><h2>出力する書類</h2><p class="subtle">登録票は選択した会社・作業員の1名分です。対象を切り替えて再出力できます。</p><div class="toolbar"><button data-action="selectAll">全て選択</button><button data-action="clearDocs">選択を解除</button></div></div></aside><div><div class="panel"><div class="field-grid"><label class="field"><span>登録票の対象会社</span><select id="printCompany">${options(state.companies,companyId)}</select></label><label class="field"><span>登録票の対象作業員</span><select id="printWorker"><option value="">選択してください</option>${options(state.workers,workerId)}</select></label></div><div class="doclist" style="margin-top:19px">${DOCS.map(d=>`<div class="docrow"><label class="check"><input type="checkbox" data-doc="${d.id}" ${selectedDocs.has(d.id)?'checked':''}><span>${esc(d.name)}<small>指定様式を清書</small></span></label><span class="orientation">A4 ${d.orientation}</span></div>`).join('')}</div><h2 style="margin-top:26px">当日のKYを入力</h2><div class="field-grid"><label class="field"><span>実施日</span><input id="kyDate" type="date" value="${kyDate}"></label>${fieldHtml(f('work','当日の作業内容','textarea'),k,'ky')}${fieldHtml(f('leader','リーダー名'),k,'ky')}${fieldHtml(f('count','作業員数（未入力なら参加者数）','number'),k,'ky')}${[0,1,2].map(i=>fieldHtml(f('risk'+i,'危険のポイント '+(i+1),'textarea'),k,'ky')).join('')}${[0,1,2].map(i=>fieldHtml(f('action'+i,'私達はこうする '+(i+1),'textarea'),k,'ky')).join('')}</div><label class="check"><input id="kyConfirmed" type="checkbox" ${k.confirmed?'checked':''}><span>当日のKYを実施し、内容を確認した<small>日付を変えると別の記録になります。署名や本人確認の代わりにはなりません。</small></span></label><div class="alert">指定様式の文字・罫線・図を白地に組み直した印刷用帳票です。書類を確認し「印刷する」を押すと、プリンターを選べます。</div><div class="toolbar"><button class="primary" data-action="preview">選択した書類を確認</button><button data-action="print">印刷する</button></div><p id="printMessage" class="status" role="status"></p><div id="preview" hidden><p class="preview-note">白地の印刷用帳票です。写真は印刷に使用していません。「入力・修正」または帳票をタップすると、登録情報を入力できます。全体を見るには横にスクロールできます。</p><div id="previewPapers" class="paper-scroll"></div></div></div><details><summary>印刷・保存・コンビニ印刷の手順</summary>${printHelp()}</details></div></div>`}
+function printHelp(){return `<ol><li>書類を選び「印刷する」を押します。</li><li>PCは使うプリンターを選びます。PDFが必要な場合だけ「PDFに保存」を選びます。iPhoneは印刷プレビューを拡大して共有から「ファイルに保存」、Androidは印刷先を「PDF形式で保存」にします（機種により表示が異なります）。</li><li>A4・倍率100%・ヘッダーとフッターなしで印刷してください。KYと労災連絡先が横、他が縦になっているか確認します。向きが混在するPDFを扱えない端末では、横書類と縦書類を分けて保存します。</li><li>コンビニで印刷する場合は保存したPDFを、ご自身で各社サービスに登録し、発行番号を使って店頭で印刷します。<a href="https://www.printing.ne.jp/" target="_blank" rel="noopener noreferrer">セブン‐イレブン：ネットプリント</a> ／ <a href="https://networkprint.ne.jp/sharp_netprint/ja/top.aspx" target="_blank" rel="noopener noreferrer">ファミリーマート・ローソン等：ネットワークプリント</a>。</li></ol><p class="subtle">印刷代はアプリ利用料とは別です。外部サービスへ書類を登録すると、そのサービスへ情報が送信されます。この試作から自動送信はしません。実際のスマホ・店頭印刷は未確認です。</p>`}
+/* 写真は参照専用。印刷面は文字・罫線・図をすべてベクターで描画する。 */
+const FORM_FONT='Hiragino Mincho ProN,Yu Mincho,serif';
+const FORM_SANS='Hiragino Kaku Gothic ProN,Yu Gothic,sans-serif';
+let formMeasure;
+function splitFormText(value,width,size,font=FORM_FONT){
+ if(!formMeasure)formMeasure=document.createElement('canvas').getContext('2d');
+ formMeasure.font=`${size}px ${font}`;
+ const rows=[];
+ for(const paragraph of String(value??'').split('\n')){
+  let row='';for(const ch of Array.from(paragraph)){
+   if(row&&formMeasure.measureText(row+ch).width>width){rows.push(row);row=ch}else row+=ch;
+  }rows.push(row);
+ }return rows;
+}
+class FormPage{
+ constructor(id,landscape=false){this.id=id;this.w=landscape?1414:1000;this.h=landscape?1000:1414;this.parts=[];this.n=0;this.landscape=landscape;}
+ rect(x,y,w,h,fill='white',stroke='#111',sw=1,r=0){this.parts.push(`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`);}
+ line(x1,y1,x2,y2,sw=1,color='#111',dash=''){this.parts.push(`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="${sw}" ${dash?`stroke-dasharray="${dash}"`:''}/>`);}
+ path(d,fill='none',stroke='#111',sw=1){this.parts.push(`<path d="${d}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round"/>`);}
+ text(text,x,y,size=15,opts={}){const rows=String(text??'').split('\n');this.parts.push(`<text x="${x}" y="${y}" font-family="${opts.sans?FORM_SANS:FORM_FONT}" font-size="${size}" font-weight="${opts.bold?700:400}" text-anchor="${opts.anchor||'start'}" fill="${opts.color||'#111'}">${rows.map((r,i)=>`<tspan x="${x}" dy="${i?size*(opts.leading||1.28):0}">${esc(r)}</tspan>`).join('')}</text>`);}
+ boxText(text,x,y,w,h,size=15,opts={}){const rows=String(text??'').split('\n'),lh=size*(opts.leading||1.25);const py=y+(h-rows.length*lh)/2+size*.88;this.text(text,opts.left?x+7:x+w/2,py,size,{...opts,anchor:opts.left?'start':'middle'});}
+ value(value,x,y,w,h,size=17,opts={}){if(value===undefined||value===null||String(value)==='')return;let f=size,rows=splitFormText(value,w-12,f,FORM_SANS);const min=opts.min||11;while(f>min&&rows.length*f*1.15>h-2){f-=.5;rows=splitFormText(value,w-12,f,FORM_SANS)}const overflow=rows.length*f*1.15>h-2;const key=opts.key||'記入欄';this.parts.push(`<g data-overlay-key="${esc(key)}" ${overflow?'data-text-overflow="true"':''}>`);this.boxText(rows.join('\n'),x+3,y,w-6,h,f,{sans:true,left:!opts.center,color:overflow?'#a32424':'#111',leading:1.15});this.parts.push('</g>');}
+ cell(label,value,x,y,w,h,labelWidth=150,size=15){this.rect(x,y,w,h);this.line(x+labelWidth,y,x+labelWidth,y+h);this.boxText(label,x,y,labelWidth,h,size);this.value(value,x+labelWidth,y,w-labelWidth,h,17,{key:label});}
+ check(x,y,checked=false,size=13){this.rect(x,y,size,size,'white','#111',1);if(checked)this.path(`M ${x+2} ${y+size*.5} l ${size*.25} ${size*.3} l ${size*.5} ${-size*.62}`,'none','#111',1.7);}
+ option(label,checked,x,y,size=13,fs=15){this.check(x,y,checked,size);this.text(label,x+size+7,y+size-.5,fs);}
+ circle(x,y,checked=false,r=9){if(checked)this.parts.push(`<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="#111" stroke-width="1.3"/>`);}
+ date(value,x,y,w,h,fs=15){const a=dateParts(value),widths=[w*.48,w*.26,w*.26];let dx=x;for(let i=0;i<3;i++){const unit=fs+3;this.boxText(a[i]||'',dx,y,widths[i]-unit,h,fs,{sans:true});this.boxText(['年','月','日'][i],dx+widths[i]-unit,y,unit,h,fs);dx+=widths[i];}}
+ section(title,y){this.text(title,40,y,17,{bold:true});}
+ arrow(x1,y1,x2,y2,color='#111',sw=1.5,head=8){this.line(x1,y1,x2,y2,sw,color);const a=Math.atan2(y2-y1,x2-x1);this.path(`M ${x2-head*Math.cos(a-.45)} ${y2-head*Math.sin(a-.45)} L ${x2} ${y2} L ${x2-head*Math.cos(a+.45)} ${y2-head*Math.sin(a+.45)}`,'none',color,sw);}
+ svg(){return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${this.w} ${this.h}" role="img" aria-label="${esc(DOCS.find(d=>d.id===this.id)?.name||this.id)}"><rect width="${this.w}" height="${this.h}" fill="white"/>${this.parts.join('')}</svg>`;}
+}
+function dateParts(v){const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(v||'');return m?[m[1],String(+m[2]),String(+m[3])]:[];}
+function registrationTop(p,title,number=''){
+ p.text('登録依頼先：施工従事者データベース事務局',42,21,14,{bold:true});p.text('E-mail：',620,21,13);p.text('sekoudb@sekisuihouse.co.jp',690,21,13,{color:'#183f6b'});
+ p.text(title,500,54,25,{bold:true,anchor:'middle'});p.text('2025/6/15版',955,54,11,{anchor:'end'});
+ if(number==='1'){
+  p.text('【施工従事者情報保護方針】URL：https://www.sekisuihouse-sekoudb.com/',42,73,11);
+  p.text('弊社は施工従事者情報保護方針に基づき、施工従事者データベースを利用し、目的以外で利用する場合には、適切かつ合理的な方法によって周知します。',42,89,10);
+ }
+}
+function registrationFooter(p,y=1315){
+ p.rect(40,y,930,24,'#efefef','none');p.text('～　お問合せはこちらまでお願いします　～　積水ハウス株式会社 協力会社連携部内',505,y+17,12,{anchor:'middle',bold:true});
+ p.text('⇒ 従事者・協力会社登録関係…「施工従事者データベース事務局」',42,y+44,12);p.text('TEL：0120-941-656',596,y+44,12);p.text('E-mail：sekoudb@sekisuihouse.co.jp',760,y+44,11,{color:'#183f6b'});
+ p.text('⇒ 作業員帳簿、労災保険書類関係…「労災保険事務局」',42,y+67,12);p.text('TEL：0120-644-051',596,y+67,12);p.text('E-mail：rousaiho@sekisuihouse.co.jp',760,y+67,11,{color:'#183f6b'});
+}
+function formWorker2(w){
+ const p=new FormPage('worker2');
+ p.text('施工従事者情報　入力原票　NO.2（各種追加情報）',500,58,25,{bold:true,anchor:'middle'});p.text('2025/6/15版',950,58,11,{anchor:'end'});
+ p.rect(773,78,180,31);p.boxText('後から登録可※',773,78,180,31,16);
+ p.text('※入力原票NO.2の内容は、データベース事務局で名簿登録完了（基本情報）後、事業所、または協力会社で登録可。',500,128,12,{anchor:'middle'});
+ p.rect(40,148,930,103);p.line(200,148,200,251);p.line(40,174,970,174);p.line(40,210,970,210);
+ p.boxText('フリガナ',40,148,160,26);p.value(w.kana,200,148,770,26,17,{key:'フリガナ'});
+ p.boxText('氏名',40,174,160,36);p.value(w.name,200,174,770,36,22,{key:'氏名'});
+ p.boxText('生年月日',40,210,160,41);p.date(w.birth,245,210,260,41,17);p.boxText('所属協力会社名',525,210,180,41);p.value(w.companyId?companyName(w.companyId):'',705,210,265,41,17,{key:'所属協力会社名'});
+ p.section('⑦受講記録（安全衛生教育）',297);
+ p.rect(40,310,930,147);p.rect(40,310,930,30,'#efefef');p.line(540,310,540,457);p.line(762,310,762,457);
+ p.boxText('教育・研修等記録',40,310,500,30);p.boxText('受講年月日',540,310,222,30);p.boxText('番号',762,310,208,30);
+ for(let i=0;i<3;i++){const y=340+i*39;p.line(40,y,970,y);p.boxText(i<2?['雇入時教育','職長教育'][i]:(w.education?.[i]?.name||''),40,y,500,39,17,{left:true});p.date(w.education?.[i]?.date,550,y,202,39,15);p.value(w.education?.[i]?.number,770,y,192,39,17,{key:'受講番号'});}
+ p.section('⑧資格',506);p.rect(40,520,930,405);p.rect(40,520,930,33,'#efefef');p.line(540,520,540,925);p.line(762,520,762,925);
+ p.boxText('取得資格・免許名称',40,520,500,33);p.boxText('取得年月日',540,520,222,33);p.boxText('番号',762,520,208,33);
+ for(let i=0;i<12;i++){const y=553+i*31;p.line(40,y,970,y);const r=w.qualifications?.[i]||{};p.value(r.name,47,y,487,31,17,{key:'資格名称'});p.date(r.date,550,y,202,31,15);p.value(r.number,770,y,192,31,17,{key:'資格番号'});}
+ p.section('⑨健康診断受診記録',981);p.rect(40,995,930,115);p.rect(40,995,930,33,'#efefef');const xs=[40,297,360,423,620,970];for(let i=1;i<xs.length-1;i++)p.line(xs[i],995,xs[i],1110);
+ ['受診年月日','定期','特殊','特殊健診の種類','受診会場'].forEach((t,i)=>p.boxText(t,xs[i],995,xs[i+1]-xs[i],33));
+ for(let i=0;i<2;i++){const y=1028+i*41;p.line(40,y,970,y);const r=w.health?.[i]||{};p.date(r.date,48,y,241,41,15);p.check(320,y+13,(r.type||'').includes('定期'));p.check(384,y+13,(r.type||'').includes('特殊'));p.value(r.kind,428,y,187,41,16,{key:'特殊健診'});p.value(r.place,625,y,340,41,16,{key:'健診会場'});}
+ p.text('＜ 添付 ＞',42,1150,18,{bold:true});p.text('⑩顔写真データ',42,1179,16,{bold:true});p.text('⑪各種書類写し…（施工従事者データベース内の書類BOXに登録可）',42,1228,16,{bold:true});
+ p.text('例）修了証・資格証・特別加入者証',65,1261,15);p.text('※マイナンバーが記載された書類は添付しないでください。',65,1285,15,{color:'#a72424'});
+ registrationFooter(p);return p;
+}
+function formCompany(c){
+ const p=new FormPage('company');registrationTop(p,'協力会社情報　入力原票');p.section('■基本情報',99);p.text('「＊」の項目は特に重要です。必ずご記入願います。',370,99,14,{color:'#b02c2c'});
+ const x=40,w=930,l=225;let y=113;
+ for(const [label,key,h]of [['＊フリガナ','kana',26],['＊協力会社名','name',60]]){p.cell(label,c[key],x,y,w,h,l,label.includes('会社名')?21:16);y+=h;}
+ p.rect(x,y,w,59);p.line(x+l,y,x+l,y+59);p.boxText('＊所在地',x,y,l,59,18);p.text('〒',x+l+10,y+20,16);p.value(c.zip,x+l+34,y,170,26,17);p.text('郵便番号検索はこちらをクリック',x+l+240,y+20,14,{color:'#183f6b'});p.value(c.address,x+l+4,y+27,w-l-8,31,18,{key:'所在地'});y+=59;
+ p.cell('＊電話番号',c.tel,x,y,520,31,l,17);p.cell('FAX番号',c.fax,x+520,y,w-520,31,135,16);y+=31;
+ p.cell('E-mail',c.email,x,y,w,29,l,16);y+=29;
+ p.cell('＊代表者',c.representative,x,y,520,33,l,17);p.rect(x+520,y,w-520,33);p.line(x+675,y,x+675,y+33);p.boxText('代表者生年月日',x+520,y,155,33,14);p.date(c.repBirth,x+680,y,245,33,14);y+=33;
+ p.cell('取引開始日','',x,y,470,32,140,15);p.text('西暦',x+150,y+22,14);p.date(c.startDate,x+192,y,265,32,14);p.cell('資本金',c.capital,x+470,y,260,32,110,15);p.text('（万円）',x+653,y+22,13);p.cell('従業員数',c.staffCount,x+730,y,200,32,125,15);y+=32;
+ p.cell('＊賃金締切日',c.closingDay,x,y,295,32,150,15);p.text('日',x+273,y+22,15);p.boxText('（締切日が従事者によって異なる場合は、全ての日付をご記入ください。例：20、末日）',x+305,y,625,32,12,{left:true});
+ p.section('■施工体制情報',470);p.text('（上記の協力会社に対し、直接工事発注を行う協力会社を記入して下さい。）',275,470,13);
+ p.cell('＊直上の協力会社名\n（工事依頼を受けた工事店）',c.upperCompany,x,485,w,57,l,17);
+ p.text('（積水ハウスグループから一次発注を行う協力会社）',640,568,13,{anchor:'middle'});p.cell('＊受注元の協力会社名\n（一次協力会社）',c.primaryCompany,x,577,w,57,l,17);
+ p.text('（例：積水ハウス○○支店、積水ハウスリフォーム △△営業所など）',640,660,13,{anchor:'middle'});p.cell('＊積水ハウスグループ\n担当事業所名',c.sekisuiOffice,x,669,w,57,l,17);
+ p.section('■建設業許可情報',765);p.rect(x,778,w,188);p.cell('建設業許可の有無','',x,778,w,30,l,16);p.option('建設業許可あり',c.permitStatus==='建設業許可あり',x+l+15,786,13,16);p.option('建設業許可なし',c.permitStatus==='建設業許可なし',x+l+275,786,13,16);
+ for(let i=0;i<2;i++){
+  const ry=808+i*79,a=c[`permit${i}Authority`]||'';p.line(x,ry+49,x+w,ry+49);p.line(x,ry+79,x+w,ry+79);p.line(x+l,ry,x+l,ry+49);p.boxText('建設業許可',x,ry,l,49,18);
+  p.option('国土交通大臣',a.includes('大臣'),x+l+16,ry+6,13,16);p.option('',!!a&&!a.includes('大臣'),x+l+16,ry+29,13,16);p.value(a.includes('大臣')?'':a.replace(/知事$/,''),x+l+41,ry+23,191,26,17);p.text('知事',x+l+236,ry+43,16);
+  p.line(560,ry,560,ry+49);p.boxText('許可',560,ry,45,49,16);p.line(605,ry,605,ry+49);p.option('一般',c[`permit${i}Type`]==='一般',615,ry+6,13,16);p.option('特定',c[`permit${i}Type`]==='特定',615,ry+28,13,16);
+  p.line(680,ry,680,ry+49);p.text('－',688,ry+31,17);p.value(c[`permit${i}YearCode`],707,ry,40,49,20,{center:true});p.text('第',751,ry+31,18);p.text('号',947,ry+31,18);const no=String(c[`permit${i}Number`]||'');
+  for(let j=0;j<7;j++){const nx=776+j*24;p.line(nx,ry,nx,ry+49,1,'#555','3 3');if(no.length<=7)p.value(Array.from(no)[j-(7-no.length)]||'',nx,ry,24,49,21,{center:true});}if(no.length>7)p.value(no,777,ry,168,49,16,{key:'許可番号'});
+  p.line(310,ry+49,310,ry+79);p.line(560,ry+49,560,ry+79);p.text('許可年月日',48,ry+69,13);p.text('西暦',138,ry+69,12);p.date(c[`permit${i}Date`],175,ry+49,130,30,12);p.text('有効期限',316,ry+69,13);p.text('西暦',385,ry+69,12);p.date(c[`permit${i}Expiry`],420,ry+49,135,30,12);p.text('許可業種',568,ry+69,13);p.value(c[`permit${i}Trade`],650,ry+49,313,30,15,{key:'許可業種'});
+ }
+ p.section('■保険加入情報',1001);const iy=1014,row=28; p.rect(x,iy,w,row*8);p.line(265,iy,265,iy+row*8);p.line(510,iy,510,iy+row*8);
+ const blocks=[['健康保険','health',4],['厚生年金','pension',2],['雇用保険','employment',2]];let rr=0;
+ for(const [title,key,n]of blocks){const by=iy+rr*row;p.boxText(title,x,by,225,n*row,18);p.line(x,by,970,by);p.boxText('加入状況',265,by,245,row,16);p.option('加入',c[key+'Status']==='加入',527,by+7,13,16);p.option('未加入',c[key+'Status']==='未加入',698,by+7,13,16);p.option('適用除外',c[key+'Status']==='適用除外',849,by+7,13,16);
+  for(let j=1;j<n;j++){const ry=by+j*row;p.line(265,ry,970,ry);const lab=j===1?(key==='employment'?'事業所整理番号':'事業所整理記号'):j===2?'健康保険の種類':'健保組合・国保組合の名称';p.boxText(lab,265,ry,245,row,15);const field=j===1?key+'Office':j===2?'healthType':'healthUnion';p.value(c[field],515,ry,450,row,16,{key:lab});}rr+=n;
+ }
+ registrationFooter(p,1262);p.text('【施工従事者情報保護方針】　URL：https://www.sekisuihouse-sekoudb.com/',42,1372,13);p.text('弊社は施工従事者情報保護方針に基づき、施工従事者データベースを利用し、目的以外で利用する場合には、適切かつ合理的な方法によって周知します。',42,1398,10);
+ return p;
+}
+const PROCESS_CODES=[
+ ['基礎','外装(建方)','内装(大工)','防水','クロス','シーリング','仮設','屋根','左官','タイル'],
+ ['塗装','電気','電話','給排水設備','ガス','空調設備','外構・造園','基礎補強','解体','ユニットバス'],
+ ['ALC','軽天','造床','防蟻','浄化槽','雨戸','給湯器','足場','アンテナ','産業廃棄物'],
+ ['キッチン','バルコニー床','石膏ボード','畳','建具','通信設備','ホームセキュリティ','網戸','家具','ガラス'],
+ ['看板','太陽光発電','板金','エレベーター','美装','生コン圧送(ポンプ)','クレーン','耐火被覆','リフォーム','サイディング'],
+ ['消防設備','物件維持管理','荷揚げ','補修','防災設備','清掃','敷地調査','石綿','断熱','地耐力調査'],
+ ['カーテン','高圧洗浄','界壁','宅配BOX','資材運搬','警備員','','','未設定','その他']
+];
+function formWorker1(w){
+ const p=new FormPage('worker1');p.h=1500;registrationTop(p,'施工従事者情報　入力原票　NO.1（基本情報）','1');
+ p.rect(40,99,930,57);p.text('…個人情報に関する以下の事項の確認にご協力ください…',500,115,12,{anchor:'middle'});p.text('本入力原票提出にあたり、ご本人様の同意を得ておられますか。',355,137,15,{anchor:'middle',bold:true});p.option('得ている',w.consent==='得ている',748,121,12,13);p.option('得ていない',w.consent==='得ていない',748,139,12,13);
+ p.text('①本人情報',40,175,14,{bold:true});p.text('「＊」の付いている項目は特に重要です。必ずご記入願います。',215,175,13,{color:'#b02c2c'});
+ const y=185,l=160;let ry=y;
+ p.cell('＊フリガナ',w.kana,40,ry,930,24,l,14);ry+=24;
+ p.rect(40,ry,930,38);p.line(200,ry,200,ry+38);p.boxText('＊氏名',40,ry,160,23,15);p.text('（外国籍の方はアルファベット）',120,ry+34,8.2,{anchor:'middle'});p.value(w.name,200,ry,770,38,22,{key:'氏名'});ry+=38;
+ p.cell('＊生年月日','',40,ry,425,28,l,14);p.text('西暦',207,ry+20,13);p.date(w.birth,244,ry,215,28,14);
+ p.rect(465,ry,505,28);p.text('性別',474,ry+20,14);p.text('男',526,ry+20,14);p.text('女',567,ry+20,14);p.text('選択しない',609,ry+20,13);p.circle(533,ry+14,w.gender==='男',11);p.circle(574,ry+14,w.gender==='女',11);if(w.gender==='選択しない')p.rect(603,ry+4,88,21,'none','#111',1,11);
+ p.text('＊血液型',714,ry+20,13);p.text('RH:',790,ry+20,12);p.text('＋',820,ry+20,13);p.text('－',846,ry+20,13);p.text('（',876,ry+20,14);p.text('）型',924,ry+20,14);const blood=/AB|A|B|O/i.exec(w.blood||'');p.value(blood?.[0]?.toUpperCase()||'',889,ry,35,28,15,{center:true});p.circle(827,ry+14,(w.blood||'').includes('+'),9);p.circle(853,ry+14,(w.blood||'').includes('-'),9);ry+=28;
+ p.rect(40,ry,930,50);p.line(200,ry,200,ry+50);p.boxText('＊現住所',40,ry,160,50,15);p.text('〒',208,ry+19,14);p.value(w.zip,231,ry,150,24,15);p.text('※郵便番号検索はこちらをクリック',450,ry+19,13,{color:'#183f6b'});p.value(w.address,204,ry+24,760,26,17,{key:'現住所'});ry+=50;
+ p.cell('携帯番号',w.mobile,40,ry,465,26,l,14);p.cell('E-mail',w.email,505,ry,465,26,100,14);ry+=26;
+ p.rect(40,ry,930,26);p.line(200,ry,200,ry+26);p.boxText('緊急連絡先',40,ry,160,26,14);p.text('氏名',208,ry+18,14);p.value(w.emergencyName,251,ry,234,26,15);p.text('続柄',498,ry+18,14);p.value(w.emergencyRelation,540,ry,83,26,14);p.text('TEL',638,ry+18,14);p.value(w.emergencyTel,684,ry,280,26,15);
+ p.text('②施工体制情報（工事の流れ）',40,397,14,{bold:true});p.rect(40,406,930,120);
+ p.line(40,444,970,444);p.line(210,406,210,444);p.line(330,406,330,444);p.line(525,406,525,444);p.boxText('協力会社コード',40,406,170,38,15);p.value(w.companyCode,210,406,120,38,17);p.boxText('従事者の\n＊所属協力会社名',330,406,195,38,14);p.value(w.companyId?companyName(w.companyId):'',525,406,445,38,19,{key:'所属協力会社名'});
+ p.line(40,466,970,466);p.text('所属協力会社内で班分けがある場合→',48,460,11);p.text('班コード',334,460,13);p.value(w.teamCode,425,444,120,22,14);p.text('班名',598,460,13);p.value(w.teamName,650,444,312,22,15);
+ p.line(40,496,515,496);p.line(230,466,230,526);p.line(515,466,515,526);p.line(730,466,730,526);
+ p.boxText('＊直上の協力会社名\n（工事依頼を受けた工事店）',40,466,190,30,11);p.value(w.upperCompany,233,466,278,30,15);
+ p.boxText('＊積水ハウスグループ\n担当事業所名',40,496,190,30,12);p.value(w.sekisuiOffice,233,496,278,30,14);
+ p.boxText('＊受注元の協力会社名\n（一次協力会社）',515,466,215,60,14);p.value(w.primaryCompany,733,466,231,60,16);
+ p.text('※工事発注の流れが　受注元（1次）の協力会社　→　直上の協力会社　→　所属協力会社　となるようにご記入下さい。',40,545,11);
+ p.text('③従事者施工情報',40,570,14,{bold:true});p.rect(40,580,930,243);
+ p.line(40,608,970,608);p.text('＊積水グループ現場作業開始日',48,599,13);p.text('西暦',257,599,13);p.date(w.sekisuiStart,294,580,214,28,13);p.line(520,580,520,608);p.boxText('雇入年月日\n又は移籍日、再入社日',520,580,154,28,11);p.text('西暦',684,599,12);p.date(w.hired,720,580,240,28,13);
+ p.line(40,705,970,705);p.line(450,608,450,705);p.line(160,608,160,705);p.line(235,608,235,705);p.line(305,608,305,705);p.line(40,628,450,628);
+ p.boxText('＊職種区分',40,608,120,20,13);p.boxText('主（メイン）',160,608,75,20,11);p.boxText('従（サブ）',235,608,70,20,11);
+ const jobs=['施工技能者・現場作業員','工事責任者','その他'];for(let i=0;i<3;i++){const jy=628+i*25.66;p.line(40,jy,305,jy);const main=w.jobMain===jobs[i],sub=w.jobSub===jobs[i];p.check(49,jy+7,main||sub,12);p.boxText(i===0?'施工技能者\n現場作業員':jobs[i],68,jy,90,25.66,12,{left:true});p.circle(197,jy+13,main,7);p.circle(270,jy+13,sub,7);}
+ p.text('職種区分を複数選択\nされる場合は、主・従\nをご指定下さい。',315,625,11);p.text('役員、事務員など記入',315,677,10);p.value(w.otherJob,312,680,130,23,12);
+ const gx=450,labelW=95,dx=gx+labelW,dataW=970-dx,cw=dataW/8;
+ p.line(gx,630,970,630);p.line(dx,656,970,656);p.line(dx,680,970,680);p.line(dx,608,dx,705);p.line(dx+cw*4,608,dx+cw*4,630);p.line(dx+cw*6,608,dx+cw*6,630);p.line(dx+cw*7,608,dx+cw*7,630);
+ p.boxText('＊工事種別',gx,608,labelW,22,11);p.boxText('積水ハウス',dx,608,cw*4,22,12);p.boxText('積水ハウス建設',dx+cw*4,608,cw*2,22,11);p.boxText('ノイエ',dx+cw*6,608,cw,22,11);p.boxText('SI事業',dx+cw*7,608,cw,22,11);p.boxText('＊工程区分',gx,630,labelW,75,12);
+ const headings=['新築','SP','RF','SHM\nPM','新築','RF','新築','新築'];const columns=['積水ハウス：新築','積水ハウス：SP','積水ハウス：RF','積水ハウス：SHM PM','積水ハウス建設：新築','積水ハウス建設：RF','ノイエ：新築','SI事業：新築'];
+ for(let i=0;i<8;i++){const xx=dx+i*cw;p.line(xx,630,xx,705);p.boxText(headings[i],xx,630,cw,26,11,{leading:1.1});if(w.constructionMain===columns[i])p.value(w.constructionMainCode||'○',xx,656,cw,24,14,{center:true});if(w.constructionSub===columns[i])p.value(w.constructionSubCode||'○',xx,680,cw,25,14,{center:true});}
+ p.line(40,731,970,731);p.text('＊従事者区分',48,724,14);p.option('労働者',w.workerType==='労働者',204,712,12,13);p.option('事業主',w.workerType==='事業主',305,712,12,13);p.option('一人親方',w.workerType==='一人親方',405,712,12,13);p.text('（例）基礎　◎　○　○　○',568,724,13);
+ p.line(40,756,970,756);p.text('屋号（一人親方）',48,748,13);p.value(w.tradeName,217,731,285,25,15);p.text('↑ 主工事種別且つ主工程区分には「◎」を選択して下さい。',527,747,11);
+ p.line(40,782,970,782);p.text('職長区分',48,774,14);p.option('該当',w.foreman==='該当',199,763,12,13);p.option('非該当',w.foreman==='非該当',289,763,12,13);p.text('従事形態',484,774,14);p.option('専属的従事（予定）',w.workStyle==='専属的従事（予定）',594,763,12,12);p.option('単発的従事（スポット）',w.workStyle==='単発的従事（スポット）',777,763,12,11);
+ p.text('＊在留資格情報（外国籍の方のみ必須）',47,793,10,{bold:true});p.line(40,798,970,798);p.line(199,798,199,823);p.line(420,798,420,823);p.line(680,798,680,823);p.boxText('国籍',40,798,65,25,11);p.value(w.nationality,106,798,88,25,12);p.text('在留資格',205,815,11);p.value(w.residenceStatus,293,798,123,25,12);p.text('在留期間満了日',427,815,11);p.date(w.residenceExpiry,542,798,132,25,10);p.text('在留カード番号',686,815,11);p.value(w.residenceCard,802,798,163,25,12);
+ p.parts.push('<g transform="translate(0 16)">');
+ p.text('④社会保険情報等',40,829,14,{bold:true});p.rect(40,840,930,85);p.line(747,840,747,925);p.line(40,868,747,868);p.line(40,896,747,896);p.line(166,840,166,925);
+ for(const [i,key,title]of [[0,'healthStatus','健康保険等'],[1,'pensionStatus','年金保険'],[2,'employmentStatus','雇用保険']]){const yy=840+i*28;p.boxText(title,40,yy,126,28,14);p.option('加入',w[key]==='加入',178,yy+8,12,13);p.option('未加入',w[key]==='未加入',376,yy+8,12,13);p.option('適用除外',w[key]==='適用除外',476,yy+8,12,13);if(i===1)p.option('年金受給者　受給',w.pensionRecipient==='受給',586,yy+8,12,11);if(i===2){p.text('被保険者\n番号不詳',248,yy+10,9);p.option('日雇保険　加入',w.dayLabor==='加入',586,yy+8,12,11);}}
+ p.boxText('国の退職金制度',747,840,223,28,14);p.line(747,868,970,868);p.line(747,896,970,896);p.text('建退共',756,887,13);p.option('加入',w.retirementBuild==='加入',827,876,12,12);p.option('非加入',w.retirementBuild==='非加入',895,876,12,12);p.text('中退共',756,915,13);p.option('加入',w.retirementSmall==='加入',827,904,12,12);p.option('非加入',w.retirementSmall==='非加入',895,904,12,12);
+ p.text('⑤労災保険情報',40,945,14,{bold:true});p.text('◆従事者区分が「一人親方」・「事業主」の場合に記入',40,961,12);p.rect(40,968,930,55);p.line(40,993,970,993);p.text('特別加入',50,986,14);p.option('加入あり',w.specialInsurance==='加入あり',201,975,12,13);p.option('加入なし',w.specialInsurance==='加入なし',327,975,12,13);p.text('加入組合',50,1014,14);p.value(w.specialUnion,181,993,226,30,14);p.line(423,993,423,1023);p.text('保険番号',432,1014,14);p.value(w.specialNumber,535,993,211,30,15);p.line(763,993,763,1023);p.text('有効年度',771,1014,14);p.value(w.specialYear,862,993,99,30,15);
+ p.text('⑥賃金支払及び計算方法等',40,1045,14,{bold:true});p.cell('＊賃金締切日',w.closingDay,40,1054,300,27,170,14);p.text('日',319,1073,14);p.text('※以下、積水ハウス新築工事に従事する労働者は必須',40,1098,11);
+ const py=1105;p.rect(40,py,930,119);p.line(179,py,179,py+119);p.line(40,py+75,970,py+75);p.line(40,py+99,970,py+99);p.line(568,py,568,py+75);p.line(812,py,812,py+75);p.boxText('賃金の\n支払形態と\n締切日・支払日',40,py,139,75,13);
+ for(const [v,xx]of [['日給',194],['月給',285],['その他',376],['日雇',477]])p.option(v,w.payType===v,xx,py+7,12,13);if(w.payType==='その他')p.value(w.payOther,410,py+22,144,22,12);
+ p.text('賃金支払日',189,py+51,12);for(const [v,xx]of [['当月',292],['翌月',352],['翌々月',412]]){p.text(v,xx,py+51,12);if(w.payMonth===v)p.rect(xx-3,py+36,52,20,'none','#111',1,10);}p.value(w.payDay,480,py+32,50,28,14,{center:true});p.text('日',539,py+51,13);
+ p.boxText('所定労働時間（勤務時間）',568,py,244,20,12);p.value(w.workHours,578,py+19,225,25,14,{center:true});p.text('休憩',578,py+60,12);p.value(w.breakMinutes,638,py+43,56,27,14,{center:true});p.text('（分）',700,py+60,12);p.option('仕事の都合によって変動',w.variableHours==='変動あり',578,py+62,10,9);
+ p.boxText('残業手当の支給',812,py,158,21,13);for(const [i,v]of ['必ず支給する','時々支給する','支給しない'].entries())p.option(v,w.allowance===v,823,py+24+i*16,10,11);
+ p.boxText('時間外手当\nの計算方法',40,py+75,139,24,10);p.text('計算開始時間　（早出）',187,py+91,10);p.value(w.earlyStart,363,py+75,140,24,12);p.text('（残業）',507,py+91,10);p.value(w.overtimeStart,569,py+75,140,24,12);p.text('分単位',743,py+91,10);p.value(w.roundUnit,711,py+75,36,24,11,{center:true});p.option('切り上げ',w.roundMethod==='切り上げ',820,py+80,10,10);p.option('切り捨て',w.roundMethod==='切り捨て',893,py+80,10,10);
+ p.boxText('休日',40,py+99,139,20,12);const holidays=w.holidays||'';for(const [lab,test,xx]of [['土曜日','土',196],['日曜日','日',318],['祝祭日','祝',440]])p.option(lab,holidays.includes(test),xx,py+103,11,12);const other=holidays.replace(/土曜日|日曜日|祝祭日|土曜|日曜|祝日|土|日|祝/g,'').replace(/[・、,／/\s]/g,'');p.option('その他',!!other,563,py+103,11,12);p.value(other,653,py+99,307,20,12);
+ p.text('【参考】＜工程区分＞',40,1243,13,{bold:true});const refY=1250,refH=140,refW=930/7;p.rect(40,refY,930,refH);
+ for(let col=0;col<7;col++){const xx=40+col*refW;if(col)p.line(xx,refY,xx,refY+refH);for(let row=0;row<10;row++){const yy=refY+row*14;if(row)p.line(xx,yy,xx+refW,yy,.4,'#888');const lab=PROCESS_CODES[col][row];const no=col===6?(row<6?61+row:row===8?98:row===9?99:''):col*10+row+1;p.text(no,xx+3,yy+10.5,10.3);p.text(lab,xx+refW/2+8,yy+10.5,10.3,{anchor:'middle'});}}
+ registrationFooter(p,1411);p.parts.push('</g>');return p;
+}
+function formSign(){
+ const p=new FormPage('sign');p.rect(40,35,920,1338,'#ffe500','none');
+ const clipPolygon=(points,left,top,right,bottom)=>{let result=points;for(const [axis,bound,greater]of [[0,left,true],[0,right,false],[1,top,true],[1,bottom,false]]){const input=result;result=[];if(!input.length)break;for(let i=0;i<input.length;i++){const a=input[i],b=input[(i+1)%input.length],ai=greater?a[axis]>=bound:a[axis]<=bound,bi=greater?b[axis]>=bound:b[axis]<=bound;const intersection=()=>{const t=(bound-a[axis])/(b[axis]-a[axis]);return [a[0]+t*(b[0]-a[0]),a[1]+t*(b[1]-a[1])]};if(ai)result.push(a);if(ai!==bi)result.push(intersection());}}return result;};
+ for(const yy of [35,1250]){p.rect(40,yy,920,95,'#e58b13','none');for(let xx=-120;xx<1100;xx+=125){const poly=clipPolygon([[xx,yy+95],[xx+95,yy],[xx+158,yy],[xx+63,yy+95]],40,yy,960,yy+95);if(poly.length)p.parts.push(`<polygon points="${poly.map(a=>a.join(',')).join(' ')}" fill="#151515"/>`);}}
+ p.text('作　業　中',500,494,147,{sans:true,bold:true,anchor:'middle',color:'#b92414'});p.text('ご迷惑をお掛けしております',500,850,52,{sans:true,bold:true,anchor:'middle',color:'#b92414'});p.rect(65,1080,870,94,'white','none');p.boxText('積水ハウスシャーメゾンＰＭ東京',65,1080,870,94,43,{sans:true});return p;
+}
+function formKy(s,k){
+ const p=new FormPage('ky',true),x=40,y=48,w=1334,titleH=121,workH=96,row=93,by=y+titleH+workH+row*6;
+ p.rect(x,y,w,titleH+workH+row*6+112,'white','#111',3);p.line(x,y+titleH,x+w,y+titleH,3);p.line(x,y+titleH+workH,x+w,y+titleH+workH,3);p.line(x,by,x+w,by,3);
+ p.text('月',290,136,66,{sans:true,bold:true});p.text('日',489,136,66,{sans:true,bold:true});p.text('（　）',558,136,58,{sans:true});p.text('危険予知活動表',1010,136,73,{sans:true,bold:true,anchor:'middle'});
+ const a=dateParts(kyDate);p.value(a[1],165,67,110,88,58,{center:true});p.value(a[2],380,67,103,88,58,{center:true});p.value('日月火水木金土'[new Date(kyDate+'T12:00:00').getDay()],598,73,60,75,46,{center:true});
+ p.line(290,y+titleH,290,by,3);p.boxText('作業内容',x,y+titleH,250,workH,53,{sans:true,bold:true});p.value(k.work||s.work,305,y+titleH+6,1055,workH-12,43,{key:'作業内容'});
+ const start=y+titleH+workH;p.line(380,start,380,by,3);p.line(x,start+row*3,x+w,start+row*3,3);
+ p.boxText('危険の\nポイント',x,start,250,row*3,57,{sans:true,bold:true});p.boxText('私達は\nこうする',x,start+row*3,250,row*3,60,{sans:true,bold:true});
+ for(let i=0;i<3;i++){if(i){p.line(290,start+i*row,x+w,start+i*row,3);p.line(290,start+(3+i)*row,x+w,start+(3+i)*row,3);}p.value(k['risk'+i],393,start+i*row+8,967,row-16,36,{key:'危険のポイント'+(i+1)});p.value(k['action'+i],393,start+(3+i)*row+8,967,row-16,36,{key:'私達はこうする'+(i+1)});}
+ p.line(565,by,565,by+112,3);p.boxText('積水ハウスシャーメゾンＰＭ東京㈱',x,by,525,112,26,{sans:true,bold:true});p.text('リーダー名',583,by+74,48,{sans:true,bold:true});p.value(k.leader,825,by+13,247,86,34,{key:'リーダー名'});p.text('作業員',1092,by+73,47,{sans:true,bold:true});p.text('名',1315,by+73,48,{sans:true,bold:true});const count=k.count!==undefined&&k.count!==''?k.count:(s.workerIds?.length||'');p.value(count,1230,by+10,70,90,47,{center:true});return p;
+}
+function formEmergency(s){
+ const p=new FormPage('emergency'),iz=state.companies.find(c=>c.id==='izumi')||state.companies[0];
+ p.text('積水ハウスシャーメゾンPM東京㈱　緊急連絡先',500,55,29,{bold:true,anchor:'middle'});p.text('（　　　　市・区）',500,107,22,{anchor:'middle'});p.value(s.city,391,77,144,32,21,{center:true});
+ const x=115,y=145,w=780,h=132;p.rect(x,y,w,h,'white','#111',2);for(const xx of [180,447,510,729])p.line(xx,y,xx,y+h,1.5);p.boxText('元\n請\nけ\n会\n社',115,y,65,h,17);p.boxText('緊\n急\n連\n絡\n先',447,y,63,h,17);
+ p.line(180,183,447,183);p.line(180,241,447,241);p.boxText('積水ハウスシャーメゾンPM東京㈱',180,y,267,38,15);p.boxText('渋谷区代々木2-1-1\n新宿マインズタワー 3階',180,183,267,58,18);p.boxText('03-5350-3517',180,241,267,36,19);
+ p.line(510,211,895,211,1.5);p.boxText('積水ハウスシャーメゾンPM東京',510,y,219,25,12);p.text('担当',520,195,15);p.value(s.ownerPerson,564,170,156,40,17,{key:'元請け担当'});p.value(iz?.name,516,214,205,27,17,{center:true,key:'工事店名'});p.text('担当',520,265,15);p.value(s.contractorPerson,564,240,156,35,17,{key:'工事店担当'});
+ for(const [cy,office,mobile]of [[145,s.ownerOfficeTel,s.ownerMobile],[211,s.contractorOfficeTel||iz?.tel,s.contractorMobile]]){p.text('TEL 事務所',737,cy+17,12);p.value(office,735,cy+18,153,16,12,{key:'事務所TEL'});p.text('TEL 携帯',737,cy+49,12);p.value(mobile,735,cy+49,153,16,12,{key:'携帯TEL'});}
+ const cx=500,cy=570;
+ p.arrow(cx,448,cx,278,'#111',1.4,8);
+ for(const [name,i,bx,by,left]of [['電気',0,45,345,true],['水道',1,45,480,true],['ガス',2,45,615,true],['電話',3,45,750,true],['労基署',4,704,345,false],['警察',5,704,480,false],['消防',6,704,615,false]]){
+  const bw=251,bh=70,labelW=49;p.rect(bx,by,bw,bh,'white','#111',2);const tx=left?bx:bx+labelW,tw=bw-labelW,ly=left?bx+bw-labelW:bx;p.line(left?bx+bw-labelW:bx+labelW,by,left?bx+bw-labelW:bx+labelW,by+bh,1.5);p.boxText(name.split('').join('\n'),ly,by,labelW,bh,19);p.line(tx,by+35,tx+tw,by+35);p.value(s['contact'+i+'Name'],tx+4,by+2,tw-8,31,16,{key:name+'連絡先'});p.value(s['contact'+i+'Tel'],tx+4,by+37,tw-8,31,16,{key:name+'TEL'});const ax=left?bx+bw:bx,ay=by+bh/2;p.arrow(left?cx-87:cx+87,cy+(ay-cy)*.25,ax,ay,'#111',1.4,8);
+ }
+ p.parts.push('<ellipse cx="500" cy="570" rx="112" ry="115" fill="#151515"/>');
+ p.path('M 423 533 L 423 500 Q 500 438 577 500 L 577 533 L 541 533 L 541 509 Q 500 490 459 509 L 459 533 Z','none','white',6);
+ p.path('M 470 543 L 530 543 L 541 565 L 562 565 L 578 624 L 422 624 L 438 565 L 459 565 Z','none','white',6);p.rect(471,567,58,34,'none','white',5);
+ p.rect(40,875,930,50,'white','#111',2);p.boxText('救急指定病院',40,875,930,50,32,{bold:true});p.rect(40,925,930,435,'white','#111',2);p.line(505,925,505,1360,2);p.line(40,965,970,965);p.line(40,1005,970,1005);
+ for(let i=0;i<2;i++){const hx=40+i*465;p.value(s['hospital'+i+'Name'],hx+8,929,449,32,21,{key:'病院名'});p.value(s['hospital'+i+'Tel'],hx+8,969,449,32,19,{key:'病院TEL'});p.value(s['hospital'+i+'Address'],hx+8,1018,449,61,19,{key:'病院住所'});p.value(s['hospital'+i+'Route'],hx+8,1093,449,72,18,{key:'搬送経路'});p.text('↓',hx+232,1240,54,{sans:true,anchor:'middle',bold:true});}
+ return p;
+}
+const ACCIDENT_CONTACTS=[{"group":"積算管理グループ","manager":["",""],"staff":[["",""],["",""],["",""],["",""],["",""],["",""],["",""]]},{"group":"維持管理グループ","manager":["",""],"staff":[["",""],["",""],["",""],["",""],["",""],["",""],["",""],["",""],["",""]]},{"group":"アフターグループ","manager":["",""],"staff":[["",""],["",""],["",""],["",""],["",""],["",""]]}];
+function publicAccidentContacts(){const site=currentSite()||{};return ACCIDENT_CONTACTS.map((base,i)=>{const rows=String(site['accidentGroup'+i]||'').split('\n').map(line=>{const [name='',tel='']=line.split(/\s*[\/／|｜]\s*/,2);return [name.trim(),tel.trim()];});return {...base,group:site['accidentGroupName'+i]||base.group,manager:rows[0]||['',''],staff:base.staff.map((_,j)=>rows[j+1]||['',''])};});}
+function formAccident(){
+ const p=new FormPage('accident',true);p.text('労働災害発生時緊急連絡先',707,52,30,{anchor:'middle',bold:true});
+ p.text('・積水ハウスシャーメゾンPM東京㈱の営業時間外に労働災害・公衆災害が発生した場合、',165,94,13);
+ p.text('　各担当へ連絡をお願いします。',165,115,13);
+ p.text('・担当に連絡が取れない場合、①→②→③の順に速やかに連絡をお願いします。',165,136,13);
+ p.text('・担当が不明な場合は、②の責任者へ連絡をお願いします。',165,157,13);
+ p.text('・①、②、③の誰も連絡が取れない場合は、順不同で他の社員へ連絡をお願いします。',165,178,13);
+ p.text('積水ハウスシャーメゾンPM東京株式会社\n賃貸技術部\n東京積算管理・アフター・維持管理グループ',1374,95,14,{anchor:'end'});p.text('TEL 03-5350-3517',1374,166,19,{anchor:'end',bold:true});p.text('電話応対時間 10:00～17:00\n定休日：土・日・祝日',1374,194,14,{anchor:'end'});
+ p.text('技術課長',95,237,18,{anchor:'middle',bold:true});p.rect(35,250,120,90);p.value(currentSite()?.accidentManagerName||'',35,253,120,28,19,{center:true,key:'責任者名'});p.value(currentSite()?.accidentManagerTel||'',35,285,120,22,13.5,{center:true,key:'責任者電話'});p.boxText('③',35,313,120,24,18);
+ const top=[250,500,750],childY=[365,615,865];p.line(155,295,177,295,1.5);p.line(177,295,177,795,1.5);
+ publicAccidentContacts().forEach((g,gi)=>{
+  const gy=top[gi],cy=childY[gi],n=g.staff.length,bw=n===9?118:n===7?145:164,step=(1174-bw)/(n-1),fs=n===9?13.5:15;
+  p.line(177,gy+45,200,gy+45,1.5);p.value(g.group,200,gy-43,1174,32,19,{key:'連絡網グループ名'});p.rect(200,gy,125,90);p.value(g.manager[0],200,gy+3,125,28,18,{center:true,key:'連絡先氏名'});p.value(g.manager[1],200,gy+33,125,22,13.5,{center:true,key:'連絡先電話'});p.boxText('②',200,gy+62,125,24,18);
+  p.line(325,gy+45,200+(n-1)*step+bw/2,gy+45,1.5);
+  g.staff.forEach(([name,tel],i)=>{const bx=200+i*step,center=bx+bw/2;p.line(center,i===0?gy+90:gy+45,center,cy,1.5);p.rect(bx,cy,bw,90);p.value(name,bx+2,cy+3,bw-4,28,n===9?16:17,{center:true,key:'連絡先氏名'});p.value(tel,bx+1,cy+35,bw-2,23,fs,{center:true,key:'連絡先電話'});p.boxText('①',bx,cy+64,bw,22,18);});
+ });return p;
+}
+function flowBox(p,text,x,y,w,h,color,fill='white',size=25){p.rect(x,y,w,h,fill,color,3,9);p.boxText(text,x+5,y+4,w-10,h-8,size,{sans:true,bold:true});}
+function formHeat(s){
+ const p=new FormPage('heat'),blue='#8fb9df',blueLine='#4e6a7a',green='#8da244',yellow='#ffde12';
+ p.rect(65,28,870,80,blue,blueLine,2,16);p.boxText('熱中症のおそれのある者に対する処置フロー',65,28,870,80,31,{sans:true,bold:true});
+ flowBox(p,'熱中症のおそれの\nある者を発見',359,145,245,98,'#a74c2b','white',24);
+ p.path('M 650 145 H 935 V 356 H 650 V 209 L 608 188 L 650 181 Z',yellow,'none');p.text('熱中症が疑われる症状例',791,174,19,{sans:true,bold:true,anchor:'middle',color:'#b55b00'});
+ p.text('【他覚症状】\nふらつき、生あくび、失神、大量の\n発汗、痙攣 等\n【自覚症状】\nめまい、筋肉痛・筋肉の硬直（こむ\nら返り）、頭痛、不快感、吐き気、倦\n怠感、高体温 等',665,205,15,{sans:true,leading:1.3});
+ p.arrow(482,249,482,311,blue,10,15);flowBox(p,'作業離脱、身体冷却',359,320,245,87,blueLine,'white',25);
+ p.text('緊急連絡先より\n関係者に連絡する',245,287,20,{sans:true,anchor:'middle'});
+ p.arrow(482,413,482,472,blue,10,15);flowBox(p,'意識の異常等',359,483,245,87,green,'white',25);
+ p.path('M 650 404 H 935 V 680 H 650 V 550 L 610 534 L 650 519 Z',yellow,'none');
+ p.text('「意識の有無」だけで\n判断するのではなく、\n①返事がおかしい\n②ぼーっとしている\nなど、普段と様子がおかしい場合も\n異常等ありとして取り扱うことが\n適当。\n判断に迷う場合は、安易な判断は\n避け、＃7119等を活用するなど\n専門機関や医療機関に相談し\n専門家の指示を仰ぐこと。',666,431,16,{sans:true,leading:1.3});
+ p.text('119',156,549,72,{sans:true,bold:true,color:'#c42c21',anchor:'middle'});p.line(359,526,239,526,1.5);p.arrow(239,526,239,617,'#111',1.5,9);p.text('異常等あり',286,508,18,{sans:true,anchor:'middle'});flowBox(p,'救急隊要請',91,628,235,82,blueLine,'white',26);
+ p.arrow(482,574,482,681,'#111',1.7,9);p.text('異常等なし',491,614,18,{sans:true});flowBox(p,'自力での\n水分摂取',359,691,245,91,green,'white',25);
+ /* 原本の救急車・ボトルを、印刷に適した単純な図形で描く。 */
+ p.path('M 88 819 V 769 H 211 L 249 795 V 819 Z','white','#606060',2);p.rect(88,795,161,10,'#c23e31','none');p.rect(100,756,39,12,'#e3533d','none');p.rect(185,772,24,19,'#b9d9e9','#606060',1);p.parts.push('<circle cx="123" cy="823" r="17" fill="#555"/><circle cx="218" cy="823" r="17" fill="#555"/>');
+ p.rect(566,715,18,43,'none','#72a8b8',2,4);p.rect(569,704,12,11,'none','#72a8b8',2,2);p.line(569,728,581,728,1.5,'#72a8b8');p.line(569,738,581,738,1.5,'#72a8b8');
+ p.line(359,736,290,736,1.6);p.arrow(290,736,290,967,'#111',1.6,9);p.text('できない',323,721,17,{sans:true,anchor:'middle'});p.line(604,736,690,736,1.6);p.arrow(690,736,690,967,'#111',1.6,9);p.text('できる',649,721,17,{sans:true});
+ p.path('M 338 804 H 659 V 935 H 338 V 888 L 296 868 L 338 847 Z',yellow,'none');
+ p.boxText('医療機関までの搬送の間や\n経過観察中は、一人にしない。',348,810,302,66,22,{sans:true,bold:true});p.boxText('（単独作業の場合は\n常に連絡できる状態を維持する）',348,878,302,47,16,{sans:true,bold:true});
+ p.text('＃7119',808,793,57,{sans:true,bold:true,anchor:'middle'});p.text('救急安心センター事業',808,824,20,{sans:true,anchor:'middle'});p.text('「意識がある場合など、\n救急車を呼ぶか迷った場合、\n専門家の指示を仰ぐ」',818,853,17,{sans:true,anchor:'middle'});
+ p.arrow(209,713,209,968,blue,10,15);flowBox(p,'医療機関への搬送',75,977,328,86,blueLine,'white',26);flowBox(p,'経過観察',587,977,328,86,blueLine,'white',28);
+ p.arrow(586,1020,407,1020,'#111',1.6,9);p.text('回復しない、症状悪化',497,1049,16,{sans:true,anchor:'middle'});
+ p.arrow(239,1067,239,1132,'#111',1.7,9);p.text('回復',253,1100,18,{sans:true});p.arrow(752,1067,752,1132,'#111',1.7,9);p.text('回復',768,1100,18,{sans:true});
+ flowBox(p,'翌作業日以降の作業内容に配慮する\n状況によっては単独作業を禁止する',57,1143,431,158,blueLine,blue,22);
+ flowBox(p,'回復当日の作業は中止にする\n帰宅後の体調確認を行う\n翌作業日以降の作業内容に配慮する',512,1143,431,158,blueLine,blue,21);
+ p.rect(57,1321,886,82,'white','#111',2,21);p.text('熱中症発症後連絡先：',77,1354,23,{sans:true,bold:true});p.text('積水ハウスシャーメゾンPM東京㈱　03-5350-3517',355,1354,18,{sans:true});p.text('工事店：',361,1386,20,{sans:true});const iz=state.companies.find(c=>c.id==='izumi')||state.companies[0];p.value([iz?.name,s.contractorPerson,s.contractorMobile||s.contractorOfficeTel||iz?.tel].filter(Boolean).join('　'),444,1362,480,35,17,{key:'工事店'});
+ return p;
+}
+function cleanPaper(id){
+ const s=currentSite()||{},c=currentCompany()||{},w=effectiveWorker()||{},k=dayRecord();
+ const page=id==='worker1'?formWorker1(w):id==='worker2'?formWorker2(w):id==='company'?formCompany(c):id==='sign'?formSign():id==='heat'?formHeat(s):id==='ky'?formKy(s,k):id==='accident'?formAccident():formEmergency(s);
+ return `<article class="sheet clean-sheet ${page.landscape?'landscape':''}" data-sheet="${id}" aria-label="${esc(DOCS.find(d=>d.id===id).name)}">${page.svg()}</article>`;
+}
+
+function paper(id){return cleanPaper(id)}
+function refreshPreview(){const root=$('#previewPapers');if(root){root.innerHTML=previewIds.map(id=>`<div class="paper-caption"><strong>${esc(DOCS.find(d=>d.id===id).name)}</strong><button data-edit-doc="${id}">入力・修正</button></div>${paper(id)}`).join('');$('#preview').hidden=false}}
+function showPreview(){if(!selectedDocs.size){toast('出力する書類を選んでください。');return false}previewIds=[...selectedDocs];refreshPreview();return true}
+async function printSelected(){if(!showPreview())return;if(selectedDocs.has('ky')&&dayRecord().count&&!/^(0|[1-9][0-9]{0,2})$/.test(dayRecord().count)){toast('作業員数は0〜999の整数で入力してください。');return;}if(selectedDocs.has('worker1')&&currentWorker()?.constructionType){toast('旧試作の工程メモを「作業員登録」の主・従の欄へ移してください。原本にはメモ欄を追加しません。');return;}const s=currentSite(),k=dayRecord();if(selectedDocs.has('ky')&&!k.confirmed){$('#printMessage').textContent='当日のKYは未確認です。内容と実施状況を確認してください。'}else $('#printMessage').textContent='印刷画面で使うプリンター、A4と縦横、ヘッダー・フッターなしを確認してください。';const root=$('#printRoot');root.innerHTML=previewIds.map(paper).join('');root.hidden=false;await Promise.all(Array.from(root.querySelectorAll('img')).map(img=>img.decode().catch(()=>{})));const overflow=Array.from(root.querySelectorAll('[data-text-overflow="true"]'));if(overflow.length){root.hidden=true;toast('元の欄に収まりません：'+[...new Set(overflow.map(e=>e.dataset.overlayKey))].join('・')+'。入力を短くしてください。');return}document.title=(s?.name||'工事書類')+'_工事書類';window.print()}
+window.addEventListener('afterprint',()=>{document.title='イズミ装美｜工事書類作成';$('#printRoot').hidden=true});
+function updateField(el){const target=el.dataset.target,key=el.dataset.key;if(!target)return;let obj;if(target==='company')obj=currentCompany();else if(target==='worker')obj=currentWorker();else if(target==='site')obj=currentSite();else if(target==='ky'){obj=ensureDayRecord()}else{const [list,i]=target.split('.');obj=currentWorker()?.[list]?.[Number(i)]}if(obj){obj[key]=el.value;save();if(key==='name'&&target==='site')$('#sitePicker').selectedOptions[0].textContent=el.value||'現場名未入力';}}
+$('#main').addEventListener('input',e=>updateField(e.target));
+$('#main').addEventListener('change',e=>{const el=e.target,s=currentSite();if(el.dataset.assign==='company'){s.companyIds=Array.from(new Set(el.checked?[...s.companyIds,el.value]:s.companyIds.filter(x=>x!==el.value)));s.workerIds=s.workerIds.filter(id=>{const w=state.workers.find(w=>w.id===id);return w&&s.companyIds.includes(w.companyId)});save();render()}if(el.dataset.assign==='worker'){s.workerIds=el.checked?[...new Set([...s.workerIds,el.value])]:s.workerIds.filter(x=>x!==el.value);save()}if(el.dataset.doc){el.checked?selectedDocs.add(el.dataset.doc):selectedDocs.delete(el.dataset.doc)}if(el.id==='workerCompany'){const w=currentWorker();w.companyId=el.value;for(const site of state.sites)if(!site.companyIds.includes(w.companyId))site.workerIds=site.workerIds.filter(id=>id!==w.id);save();render()}if(el.id==='kyDate'){if(!el.value){el.value=kyDate;return}kyDate=el.value;render()}if(el.id==='kyConfirmed'){ensureDayRecord().confirmed=el.checked;save()}if(el.id==='printCompany'){companyId=el.value;render()}if(el.id==='printWorker'){workerId=el.value;if(previewIds.length)refreshPreview()}});
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.tab){tab=b.dataset.tab;render()}if(b.dataset.goto){tab=b.dataset.goto;render();window.scrollTo({top:0})}if(b.dataset.company){companyId=b.dataset.company;render()}if(b.dataset.worker){workerId=b.dataset.worker;render()}if(b.dataset.ref){const d=DOCS.find(x=>x.photo===Number(b.dataset.ref));$('#referenceTitle').textContent=d?.name||'原本';$('#referenceImage').src=PHOTOS[Number(b.dataset.ref)];$('#referenceDialog').showModal()}if(b.dataset.close)$('#'+b.dataset.close).close();const a=b.dataset.action;if(a==='saveRecords')registerRecords();if(a==='companyLink')manageCompanyLink();if(a==='newCompany'){const c={id:uid(),kind:'会社',name:''};state.companies.push(c);companyId=c.id;save();render()}if(a==='newWorker'){const w=blankWorker(companyId);state.workers.push(w);workerId=w.id;save();render()}if(a==='duplicateSite'){const source=currentSite();const s=JSON.parse(JSON.stringify(source));s.id=uid();s.name=(source.name||'現場')+'（複製）';s.kyDays={};delete s.kyByCompany;s.start='';s.end='';state.sites.push(s);siteId=s.id;save();render();toast('現場を複製しました。KYの日別記録・確認状態・工事日程は引き継いでいません。')}if(a==='selectAll'){selectedDocs=new Set(DOCS.map(x=>x.id));render()}if(a==='clearDocs'){selectedDocs.clear();previewIds=[];render()}if(a==='preview')showPreview();if(a==='print')printSelected()});
+$('#sitePicker').addEventListener('change',e=>{siteId=e.target.value;previewIds=[];render()});
+$('#newSite').addEventListener('click',()=>{const s=blankSite();state.sites.push(s);siteId=s.id;tab='site';previewIds=[];save();render()});
+$('#demo').addEventListener('click',()=>{let c=state.companies.find(x=>x.id==='demo-company');if(!c){c={id:'demo-company',kind:'会社',name:'記入例：協力会社A（架空）',kana:'キニュウレイ',representative:'記入例 代表',upperCompany:'株式会社イズミ装美',primaryCompany:'株式会社イズミ装美'};state.companies.push(c)}let w=state.workers.find(x=>x.id==='demo-worker');if(!w){w=blankWorker(c.id);Object.assign(w,{id:'demo-worker',name:'記入例 作業員A（架空）',kana:'キニュウレイ サギョウイン',jobMain:'施工技能者・現場作業員',workerType:'労働者'});state.workers.push(w)}let s=state.sites.find(x=>x.id==='demo-site');if(!s){s=blankSite();Object.assign(s,{id:'demo-site',name:'記入例：リフォーム工事（架空）',code:'DEMO-001',city:'記入例',work:'内装補修作業',companyIds:['izumi',c.id],workerIds:[w.id]});s.kyDays[today()]={leader:'記入例 リーダー',risk0:'搬入時に通行者と接触する',action0:'作業区画を表示し、誘導を付けて搬入する',work:'内装補修作業',confirmed:false};state.sites.push(s)}siteId=s.id;companyId=c.id;workerId=w.id;kyDate=today();tab='docs';save();render();toast('架空の記入例を追加しました。既存の入力内容は残っています。')});
+function download(data,name,type){const url=URL.createObjectURL(new Blob([data],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),2000)}
+$('#backup').addEventListener('click',()=>download(JSON.stringify(state,null,2),'イズミ工事書類_バックアップ_'+today()+'.json','application/json'));
+$('#restoreButton').addEventListener('click',()=>$('#restoreFile').click());
+$('#restoreFile').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>5*1024*1024)throw Error('ファイルが大きすぎます。5MB以下のバックアップを選んでください。');const next=validate(JSON.parse(await file.text()));if(!await confirmAction('バックアップの内容に切り替えます。現在の内容を保存していない場合は、先に「バックアップ保存」をしてください。読み込みますか？'))return;if(!CLOUD||cloudAccess?.role==='admin')fillIzumiDefaults(next);state=next;siteId=state.sites[0]?.id||'';companyId=CLOUD&&cloudAccess?.role==='contractor'?cloudAccess.companyId:state.companies[0].id;workerId=state.workers.find(w=>!CLOUD||cloudAccess?.role==='admin'||w.companyId===companyId)?.id||'';loadError=false;previewIds=[];save();render();toast('バックアップを読み込みました。')}catch(err){toast('読み込めませんでした：'+err.message)}finally{e.target.value=''}});
+function validate(raw){if(!raw||raw.schemaVersion!==1||!Array.isArray(raw.companies)||!raw.companies.length||!Array.isArray(raw.workers)||!Array.isArray(raw.sites))throw Error('この試作のバックアップ形式ではありません。');let seen=new Set();const identifier=id=>{if(typeof id!=='string'||!/^[a-zA-Z0-9_-]{1,80}$/.test(id)||['__proto__','constructor','prototype'].includes(id)||seen.has(id))throw Error('登録IDが不正または重複しています。');seen.add(id);return id};const pick=(r,fields)=>{if(!r||typeof r!=='object'||Array.isArray(r))throw Error('登録情報の形式が不正です。');const o={};for(const f of fields){if(r[f.key]!==undefined){if(typeof r[f.key]!=='string'||r[f.key].length>(f.type==='textarea'?500:120))throw Error('項目の形式・文字数が不正です：'+f.label);if(f.options&&r[f.key]!==''&&!f.options.includes(r[f.key]))throw Error('選択項目の値が不正です。');if(f.type==='date'&&r[f.key]!==''&&!/^\d{4}-\d{2}-\d{2}$/.test(r[f.key]))throw Error('日付の形式が不正です。');o[f.key]=r[f.key]}}return o};const all=g=>g.flatMap(x=>x[1]);if(raw.companies.length>1000||raw.workers.length>5000||raw.sites.length>5000)throw Error('登録件数が上限を超えています。');const companies=raw.companies.map(r=>({id:identifier(r.id),...pick(r,all(COMPANY))}));const companyIds=new Set(companies.map(x=>x.id));const workers=raw.workers.map(r=>{if(!companyIds.has(r.companyId))throw Error('所属会社の参照が不正です。');const w={id:identifier(r.id),companyId:r.companyId,...pick(r,all(WORKER))};for(const [key,n,fs]of[['education',3,EDUCATION],['qualifications',12,QUALIFICATION],['health',2,HEALTH]]){if(!Array.isArray(r[key])||r[key].length!==n)throw Error('追加情報の行数が不正です。');w[key]=r[key].map(row=>pick(row,fs))}return w});const workerIds=new Set(workers.map(x=>x.id));const kyFields=[f('work','作業内容','textarea'),f('leader','リーダー'),f('count','人数'),...[0,1,2].flatMap(i=>[f('risk'+i,'危険','textarea'),f('action'+i,'対策','textarea')])];const sites=raw.sites.map(r=>{if(!Array.isArray(r.companyIds)||!Array.isArray(r.workerIds)||r.companyIds.some(id=>!companyIds.has(id))||r.workerIds.some(id=>!workerIds.has(id)))throw Error('参加会社・作業員の参照が不正です。');if(r.workerIds.some(id=>!r.companyIds.includes(workers.find(w=>w.id===id).companyId)))throw Error('参加作業員と会社が一致しません。');const s={id:identifier(r.id),...pick(r,all(SITE)),companyIds:[...new Set(r.companyIds)],workerIds:[...new Set(r.workerIds)],kyDays:{}};if(!r.kyDays||typeof r.kyDays!=='object'||Array.isArray(r.kyDays)||Object.keys(r.kyDays).length>4000)throw Error('KY日別記録が不正です。');for(const [date,record]of Object.entries(r.kyDays)){if(!/^\d{4}-\d{2}-\d{2}$/.test(date))throw Error('KYの日付が不正です。');if(record.confirmed!==undefined&&typeof record.confirmed!=='boolean')throw Error('KY確認値が不正です。');s.kyDays[date]={...pick(record,kyFields),confirmed:record.confirmed===true}}if(r.kyByCompany!==undefined){if(!r.kyByCompany||typeof r.kyByCompany!=='object'||Array.isArray(r.kyByCompany))throw Error('会社別KY記録が不正です。');s.kyByCompany={};for(const [cid,days]of Object.entries(r.kyByCompany)){if(!companyIds.has(cid)||!days||typeof days!=='object'||Array.isArray(days)||Object.keys(days).length>4000)throw Error('会社別KYの所属・記録が不正です。');s.kyByCompany[cid]={};for(const [date,record]of Object.entries(days)){if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||!record||typeof record!=='object'||Array.isArray(record)||(record.confirmed!==undefined&&typeof record.confirmed!=='boolean'))throw Error('会社別KYの日付・確認値が不正です。');s.kyByCompany[cid][date]={...pick(record,kyFields),confirmed:record.confirmed===true};}}}return s});return {schemaVersion:1,companies,workers,sites}}
+function inventoryRows(){return [...COMPANY.flatMap(([g,fs])=>fs.map(f=>['会社',g,f.label,f.required?'原本＊':'',f.options?.join('／')||''])),...WORKER.flatMap(([g,fs])=>fs.map(f=>['作業員',g,f.label,f.required?'原本＊':'',f.options?.join('／')||''])),...[['受講記録',EDUCATION],['資格',QUALIFICATION],['健康診断',HEALTH]].flatMap(([g,fs])=>fs.map(f=>['作業員',g,f.label,'',f.options?.join('／')||''])),...SITE.flatMap(([g,fs])=>fs.map(f=>['現場',g,f.label,'',f.options?.join('／')||''])),...['実施日','作業内容','リーダー名','作業員数','危険のポイント1〜3','私達はこうする1〜3','当日の実施・確認（画面のみ）'].map(n=>['KY','日別記録',n,'',''])]}
+function helpHtml(){return `<h3>最初の操作</h3><ol><li>「会社登録」で協力会社・一人親方を登録します。</li><li>「作業員登録」で所属会社と本人情報を登録します。</li><li>「現場・参加者」で共通情報と参加者を選びます。</li><li>「書類・印刷」で当日のKYを入力し、出力対象を確認します。</li></ol><p>「記入例で試す」は架空データを追加します。登録する情報と担当会社を確認してから「登録・保存」を押してください。</p><h3>保存</h3><p>「登録・保存」で、この端末のブラウザへ保存します。同じ端末・同じブラウザで開くと次回も再利用できます。別の端末へ移す場合は「バックアップ保存」と「バックアップ読込」を使ってください。一般用の入力はサーバーへ送信しません。</p><h3>提出先の書式と印刷</h3><p>添付写真を見本に、8枚の文字・罫線・図を白地で作り直しています。写真の紙・床・影・傾き・裏写りは印刷しません。登録情報を反映し、書類を選んで「印刷する」を押します。一般用には原本写真や社内の個人連絡先を含めていません。労災連絡網の連絡先は現場ごとに入力・保存できます。</p><p>KYと労働災害発生時緊急連絡先はA4横、ほかはA4縦です。写真7の労災連絡網は、原本と同じ横向きで連絡順序と親子関係を残しています。氏名・連絡先の現行性は提出前に確認してください。本人同意、KYの実施確認、署名は自動で済ませません。顔写真・資格証の添付管理は未実装です。</p><h3>入口と公開</h3><p>一般用は専用URLやログイン操作なしで使えます。登録内容は各自のブラウザ内に保存し、ほかの利用者や管理者へ送信しません。管理者用の登録済みデータは、従来の専用画面でのみ扱います。</p><h3>既存ドメインと費用</h3><p>一般用の入力・保存・印刷に新たな有料契約は必要ありません。コンビニの印刷代は別です。既存の業務システムは変更していません。</p><h3>PDF・印刷</h3>${printHelp()}<h3>原本から整理した入力項目</h3><div class="toolbar"><button id="copyInventory">項目一覧をまとめてコピー</button><button id="downloadInventory">項目一覧をCSV保存</button></div><div id="inventory" class="table-wrap"><table><thead><tr><th>登録先</th><th>区分</th><th>項目</th><th>原本＊</th><th>選択肢</th></tr></thead><tbody>${inventoryRows().map(r=>'<tr>'+r.map(v=>'<td>'+esc(v)+'</td>').join('')+'</tr>').join('')}</tbody></table></div>`}
+$('#helpContent').innerHTML=helpHtml();
+$('#helpButton').addEventListener('click',()=>$('#helpDialog').showModal());
+$('#copyInventory').addEventListener('click',async()=>{const text=[['登録先','区分','項目','原本＊','選択肢'],...inventoryRows()].map(r=>r.join('\t')).join('\n');try{await navigator.clipboard.writeText(text);toast('全項目をコピーしました。Excel等へ貼り付けられます。')}catch(e){const range=document.createRange();range.selectNodeContents($('#inventory'));const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);toast('表を選択しました。コピー操作で取得してください。')}});
+$('#downloadInventory').addEventListener('click',()=>{const rows=[['登録先','区分','項目','原本＊','選択肢'],...inventoryRows()];download('\uFEFF'+rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',')).join('\r\n'),'原本から整理した入力項目.csv','text/csv;charset=utf-8')});
+async function confirmAction(message){
+ let dialog=$('#confirmActionDialog');if(!dialog){document.body.insertAdjacentHTML('beforeend','<dialog id="confirmActionDialog"><h2>操作の確認</h2><p id="confirmActionText"></p><div class="actions"><button class="primary" id="confirmActionYes">実行する</button><button id="confirmActionNo">キャンセル</button></div></dialog>');dialog=$('#confirmActionDialog');}
+ if(dialog.open)return false;$('#confirmActionText').textContent=message;
+ return await new Promise(resolve=>{const finish=value=>{dialog.close();resolve(value);};$('#confirmActionYes').onclick=()=>finish(true);$('#confirmActionNo').onclick=()=>finish(false);dialog.oncancel=event=>{event.preventDefault();finish(false);};dialog.showModal();});
+}
+let cloudAccess=null,cloudRevision=0,cloudReady=false,cloudDirty=false,cloudEdit=0,cloudBusy=false,cloudExpected=null;
+const cloudDraftKey=()=>KEY+'-draft-'+(cloudAccess?.companyId||'admin');
+function cloudMessage(text,error=false){$('#saveStatus').textContent=text;$('#saveStatus').classList.toggle('error',error);}
+function cloudDraft(){if(!cloudReady)return;cloudDirty=true;cloudEdit++;try{localStorage.setItem(cloudDraftKey(),JSON.stringify({revision:cloudRevision,data:state}));cloudMessage('未登録の変更があります。入力後に「登録・保存」を押してください。');}catch{cloudMessage('下書きを端末に残せません。「登録・保存」でサーバーへ保存してください。',true);}}
+async function cloudRequest(path,options={}){const response=await fetch(path,{credentials:'same-origin',cache:'no-store',...options,headers:{'Content-Type':'application/json',...(cloudExpected&&path!=='/api/session'?{'X-Izumi-Access-Scope':cloudExpected}:{}),...options.headers}});let body;try{body=await response.json();}catch{throw Error('サーバーから正しい応答を受け取れませんでした。');}if(!response.ok){if(response.status===401){cloudMessage('専用URLが停止されたか、有効期限が切れています。専用URLから開き直してください。',true);}throw Error(body.error||body.message||'登録できませんでした。');}return body;}
+async function registerRecords(){
+ if(!CLOUD){save();toast('このブラウザに登録しました。次回も同じ入力を呼び出せます。');return true;}
+ if(!cloudReady||cloudBusy)return false;cloudBusy=true;const edit=cloudEdit,data=JSON.parse(JSON.stringify(state));
+ $$('[data-action="saveRecords"]').forEach(b=>b.disabled=true);cloudMessage('サーバーへ登録しています…');
+ try{const result=await cloudRequest('/api/state',{method:'PUT',body:JSON.stringify({data,revision:cloudRevision})});cloudRevision=result.revision;if(edit===cloudEdit){cloudDirty=false;try{localStorage.removeItem(cloudDraftKey());}catch{}cloudMessage('サーバーに登録済み '+new Date().toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'}));}else{try{localStorage.setItem(cloudDraftKey(),JSON.stringify({revision:cloudRevision,data:state}));}catch{}cloudMessage('登録しました。続けて入力した変更は、もう一度「登録・保存」で登録してください。');}toast('登録しました。次回も呼び出せます。');return true;}
+ catch(error){cloudMessage(error.message+' 入力はこの端末の下書きに残しています。',true);toast(error.message);return false;}
+ finally{cloudBusy=false;$$('[data-action="saveRecords"]').forEach(b=>b.disabled=false);}
+}
+function applyCloudPermissions(){
+ if(!CLOUD||!cloudReady)return;
+ if(cloudAccess.role==='admin'){
+  const company=currentCompany();if(tab==='company'&&company&&company.id!=='izumi'){
+   const head=$('#main .page-head');if(head&&!$('#companyLinkButton'))head.insertAdjacentHTML('beforeend','<button id="companyLinkButton" data-action="companyLink">専用URLを管理</button>');
+  }return;
+ }
+ $('#newSite').hidden=true;$('#demo').hidden=true;
+ $$('[data-action="newCompany"],[data-action="duplicateSite"]').forEach(b=>b.hidden=true);
+ $$('[data-company]').forEach(b=>b.hidden=b.dataset.company!==cloudAccess.companyId);
+ $$('[data-target="site"],[data-assign]').forEach(el=>el.disabled=true);
+ const select=$('#workerCompany');if(select)select.disabled=true;
+ const printCompany=$('#printCompany');if(printCompany){printCompany.value=cloudAccess.companyId;printCompany.disabled=true;}
+ if(tab==='company'&&companyId!==cloudAccess.companyId)$$('[data-target="company"]').forEach(el=>el.disabled=true);
+}
+async function initializeCloud(){
+ if(!CLOUD)return;
+ try{
+  const token=location.hash.slice(1);if(/^[a-f0-9]{64}$/.test(token)){const session=await cloudRequest('/api/session',{method:'POST',body:JSON.stringify({token})});cloudExpected=session.access.role+':'+(session.access.companyId||'');}
+  const result=await cloudRequest('/api/state');if(cloudExpected&&cloudExpected!==result.access.role+':'+(result.access.companyId||''))throw Error('別の会社の画面が開かれています。専用URLから開き直してください。');cloudExpected=result.access.role+':'+(result.access.companyId||'');state=validate(result.data);cloudAccess=result.access;cloudRevision=result.revision;
+  companyId=cloudAccess.role==='contractor'?cloudAccess.companyId:(state.companies.find(c=>c.id==='izumi')?.id||state.companies[0].id);
+  workerId=state.workers.find(w=>cloudAccess.role==='admin'||w.companyId===companyId)?.id||'';
+  siteId=state.sites[0]?.id||'';tab='company';previewIds=[];cloudReady=true;render();
+  $('.notice').textContent=cloudAccess.role==='admin'?'管理者用です。会社・作業員・現場を入力し、「登録・保存」で登録してください。協力会社の専用URLは会社登録画面から発行できます。':'自社と担当現場だけ利用できます。入力後は「登録・保存」を押してください。';
+  $('header .local').textContent=cloudAccess.role==='admin'?'管理者':'協力会社';
+  cloudMessage('サーバーの登録内容を読み込みました。');
+  const draft=localStorage.getItem(cloudDraftKey());if(draft){$('.notice').insertAdjacentHTML('afterend','<div class="notice" id="draftNotice">この端末に未登録の下書きがあります。 <button id="restoreDraft">下書きを戻す</button></div>');$('#restoreDraft').onclick=()=>{try{const saved=JSON.parse(draft);if(saved.revision!==cloudRevision){download(JSON.stringify(saved.data,null,2),'未登録の下書き_'+today()+'.json','application/json');toast('別の更新があるため下書きで上書きできません。下書きをファイルに保存しました。');return;}state=validate(saved.data);cloudDraft();render();$('#draftNotice').remove();}catch{toast('下書きを読み込めませんでした。');}};}
+ }catch(error){cloudMessage(error.message,true);$('#main').innerHTML='<h1>登録内容を読み込めませんでした</h1><p>入力を始める前に、専用URLから開き直してください。</p>';}
+ document.body.classList.remove('cloud-loading');
+}
+async function manageCompanyLink(){
+ const company=currentCompany();if(!company||company.id==='izumi'||cloudAccess?.role!=='admin')return;
+ if(!company.name?.trim()){toast('先に会社名を入力してください。');return;}
+ if(cloudDirty&&!await registerRecords())return;
+ let dialog=$('#linkDialog');if(!dialog){document.body.insertAdjacentHTML('beforeend','<dialog id="linkDialog"><div class="dialogbar"><h2>会社専用URL</h2><button data-close="linkDialog">閉じる</button></div><div id="linkContent"></div></dialog>');dialog=$('#linkDialog');}
+ $('#linkContent').innerHTML=`<p><strong>${esc(company.name)}</strong></p><p>このURLを開いた人は、この会社と担当現場だけ利用できます。URLは必要な相手だけに渡してください。</p><div class="actions"><button class="primary" id="issueLink">発行・再発行</button><button id="revokeLink">URLを停止</button></div><div id="issuedLink" style="margin-top:16px"></div>`;
+ $('#issueLink').onclick=async()=>{if(!await confirmAction(company.name+' の専用URLを発行します。以前のURLがある場合は使えなくなります。発行しますか？'))return;try{const result=await cloudRequest('/api/links',{method:'POST',body:JSON.stringify({companyId:company.id,action:'issue'})});const url=location.origin+'/#'+result.token;$('#issuedLink').innerHTML='<label class="field"><span>専用URL（発行時だけ表示）</span><textarea id="shareLink" readonly></textarea></label><button id="copyShareLink">URLをコピー</button>';$('#shareLink').value=url;$('#copyShareLink').onclick=async()=>{try{await navigator.clipboard.writeText(url);toast('専用URLをコピーしました。');}catch{$('#shareLink').select();toast('選択したURLをコピーしてください。');}};}catch(error){toast(error.message);}};
+ $('#revokeLink').onclick=async()=>{if(!await confirmAction(company.name+' の専用URLを停止します。この会社から利用できなくなります。停止しますか？'))return;try{await cloudRequest('/api/links',{method:'POST',body:JSON.stringify({companyId:company.id,action:'revoke'})});$('#issuedLink').textContent='URLを停止しました。';}catch(error){toast(error.message);}};
+ dialog.showModal();
+}
+window.addEventListener('beforeunload',event=>{if(CLOUD&&cloudDirty){event.preventDefault();event.returnValue='';}});
+initializeCloud();
+
+function openPaperEditor(id){
+ const doc=DOCS.find(x=>x.id===id);if(!doc)return;
+ let title=doc.name,content='';
+ if(id==='company')content=groupsHtml(COMPANY,currentCompany(),'company',COMPANY.length,'paper-');
+ else if(id==='worker1'||id==='worker2'){
+  const worker=effectiveWorker();if(!worker){toast('先に「作業員登録」で対象の作業員を登録・保存してください。');return;}
+  content=groupsHtml(WORKER,worker,'worker',WORKER.length,'paper-')+repeatEditor('受講記録（安全衛生教育）',worker.education,EDUCATION,'education')+repeatEditor('資格・免許',worker.qualifications,QUALIFICATION,'qualifications')+repeatEditor('健康診断受診記録',worker.health,HEALTH,'health');
+ }else if(id==='ky'){
+  const fields=[f('work','当日の作業内容','textarea'),f('leader','リーダー名'),f('count','作業員数','number'),...[0,1,2].flatMap(i=>[f('risk'+i,'危険のポイント '+(i+1),'textarea'),f('action'+i,'私達はこうする '+(i+1),'textarea')])];
+  content='<p>実施日：'+esc(kyDate)+'</p><div class="field-grid">'+fields.map(f=>fieldHtml(f,dayRecord(),'ky','paper-')).join('')+'</div>';
+ }else if(id==='accident')content=groupsHtml([SITE[SITE.length-1]],currentSite(),'site',1,'paper-');
+ else if(id==='heat'||id==='emergency')content=groupsHtml(SITE,currentSite(),'site',SITE.length,'paper-');
+ else{toast('この書類は指定の固定内容です。');return;}
+ let dialog=$('#paperEditDialog');if(!dialog){$('#main').insertAdjacentHTML('beforeend','<dialog id="paperEditDialog"><div class="dialogbar"><h2 id="paperEditTitle"></h2><button data-close="paperEditDialog">閉じる</button></div><p class="subtle">ここで入力した内容は登録情報に反映され、ほかの書類にも使えます。</p><div id="paperEditFields"></div><div class="toolbar"><button class="primary" id="paperEditSave">登録・保存して帳票へ反映</button></div></dialog>');dialog=$('#paperEditDialog');}
+ $('#paperEditTitle').textContent=title;$('#paperEditFields').innerHTML=content;
+ $('#paperEditSave').onclick=async()=>{if(await registerRecords()){refreshPreview();dialog.close();}};
+ applyCloudPermissions();dialog.showModal();
+}
+$('#main').addEventListener('click',event=>{const button=event.target.closest('[data-edit-doc]');if(button){openPaperEditor(button.dataset.editDoc);return;}const sheet=event.target.closest('#previewPapers [data-sheet]');if(sheet)openPaperEditor(sheet.dataset.sheet);});
+
+render();if(!CLOUD&&!loadError)save();
+</script>
+</body>
+</html>
